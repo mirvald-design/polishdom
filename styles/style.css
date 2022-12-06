@@ -1,0 +1,272 @@
+body {
+	margin: 0;
+	background-color: #fff;
+	font-family: 'Jost', sans-serif;
+}
+
+h1 {
+	margin-bottom: 16px;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 36px;
+	text-align: center;
+}
+
+h4 {
+	margin: 0;
+	font-weight: 700;
+}
+
+p {
+	margin: 0;
+	font-weight: 400;
+}
+
+a {
+	letter-spacing: normal;
+	text-decoration: none;
+	color: black;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	margin-top: 32px;
+	margin-bottom: 32px;
+	flex-direction: column;
+	gap: 32px;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Navigation */
+.nav {
+	display: flex;
+	align-items: center;
+	padding-bottom: 16px;
+	justify-content: space-between;
+	border-bottom: 2px solid #F9F9F9;
+}
+
+.btn-kons {
+	background-color: #F9F9F9;
+	border-radius: 26px;
+	padding: 16px 28px;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Navigation */
+.header {
+	display: flex;
+	border-radius: 26px;
+	padding: 120px 26px 120px;
+	flex-direction: column;
+	gap: 32px;
+	height: fit-content;
+}
+
+.title {
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 100px;
+	text-align: center;
+}
+
+.subtitle {
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 400;
+	letter-spacing: 10%;
+	text-align: center;
+}
+
+.btn-container {
+	display: flex;
+	gap: 12px;
+	justify-content: center;
+}
+
+.btn-tarif {
+	background-color: #34C759;
+	padding: 16px 26px;
+	border-radius: 26px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 28px;
+	height: fit-content;
+}
+
+.btn-test {
+	border: 1px solid #34C759;
+	padding: 16px 26px;
+	border-radius: 26px;
+	height: fit-content;
+	color: #34C759;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.btn-contact {
+	background-color: #34C759;
+	border-radius: 26px;
+	text-align: center;
+	padding: 12px 26px;
+	color: #fff;
+}
+
+
+.services {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+
+.services-card {
+	border: 1px solid #1019280F;
+	padding: 32px;
+	border-radius: 26px;
+	width: 40%;
+}
+
+.kak-rabotajet {
+	background-color: #F9F9F9;
+	border-radius: 26px;
+}
+
+.kak-rabotajet-card-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 26px;
+	gap: 26px;
+}
+
+.kak-rabotajet-card {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	background-color: #fff;
+	border-radius: 26px;
+	padding: 26px;
+	width: 309px;
+}
+
+.kak-rabotajet-card img {
+	height: 130px;
+}
+
+.price {
+	text-align: center;
+	font-size: 24px;
+	line-height: 48px;
+	font-weight: 700;
+}
+
+.tarif-block {
+	display: flex;
+	gap: 16px;
+}
+
+.adults {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	border: 1px solid #1019280F;
+	border-radius: 26px;
+	padding: 32px;
+	width: 50%;
+}
+
+.children {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	border: 1px solid #1019280F;
+	border-radius: 26px;
+	padding: 32px;
+	width: 50%;
+}
+
+/* Reviews */
+.reviews {
+	display: flex;
+	background-color: #F9F9F9;
+	border-radius: 26px;
+	padding: 26px;
+	gap: 16px;
+}
+
+.reviews-block1 {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 50%;
+}
+
+.reviews-block2 {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 50%;
+}
+
+.reviews-card {
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 26px;
+	padding: 26px;
+	text-align: left;
+}
+
+.avatar-clients {
+	width: 48px;
+	height: 48px;
+}
+
+
+.avatar-block {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+
+/* Reviews */
+
+/* FAQ */
+.faq {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+details {
+	display: flex;
+	border: 1px solid #1019280F;
+	border-radius: 26px;
+	padding: 26px;
+	justify-content: space-between;
+}
+
+summary {
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 32px;
+
+}
+
+details>summary::after {
+	content: "+";
+}
+
+details[open]>summary::after {
+	content: "-";
+}
+
+/* FAQ */
