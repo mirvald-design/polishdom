@@ -13,6 +13,7 @@ h1 {
 }
 
 h4 {
+	font-size: 16px;
 	margin: 0;
 	font-weight: 700;
 }
@@ -47,6 +48,11 @@ a {
 	padding-bottom: 16px;
 	justify-content: space-between;
 	border-bottom: 2px solid #F9F9F9;
+}
+
+.nav-item {
+	display: flex;
+	gap: 16px;
 }
 
 .btn-kons {
@@ -122,7 +128,12 @@ a {
 
 .services {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.services-block {
+	display: flex;
 	gap: 16px;
 }
 
@@ -130,12 +141,17 @@ a {
 	border: 1px solid #1019280F;
 	padding: 32px;
 	border-radius: 26px;
-	width: 40%;
+	width: 50%;
 }
 
 .kak-rabotajet {
 	background-color: #F9F9F9;
 	border-radius: 26px;
+}
+
+.workit-block {
+	display: flex;
+	gap: 16px;
 }
 
 .kak-rabotajet-card-container {
@@ -148,11 +164,11 @@ a {
 .kak-rabotajet-card {
 	display: flex;
 	flex-direction: column;
-	text-align: left;
+	text-align: center;
 	background-color: #fff;
 	border-radius: 26px;
 	padding: 26px;
-	width: 309px;
+	width: 50%;
 }
 
 .kak-rabotajet-card img {
