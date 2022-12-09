@@ -9,8 +9,8 @@ h1 {
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 36px;
-	text-align: center;
 }
+
 
 h4 {
 	font-size: 16px;
@@ -29,13 +29,17 @@ a {
 	color: black;
 }
 
+span {
+	margin: 0;
+}
+
 .main {
 	display: flex;
 	flex-direction: column;
 	margin-top: 32px;
 	margin-bottom: 32px;
 	flex-direction: column;
-	gap: 32px;
+	gap: 128px;
 	max-width: 1080px;
 	margin-left: auto;
 	margin-right: auto;
@@ -67,11 +71,11 @@ a {
 }
 
 /* Navigation */
+
 .header {
 	display: flex;
 	border-radius: 26px;
 	gap: 32px;
-	padding: 128px 0px 128px 0px;
 	align-items: center;
 }
 
@@ -95,6 +99,36 @@ a {
 	display: flex;
 	gap: 12px;
 	justify-content: flex-start;
+}
+
+.about {
+	display: flex;
+	gap: 16px;
+	border: 1px solid #1019280F;
+	border-radius: 32px;
+	padding: 32px;
+}
+
+.about-block-1 {}
+
+.about-block-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: center;
+}
+
+.about-block-2-id1 {
+	display: flex;
+	gap: 16px;
+}
+
+
+.about-btn {
+	background-color: #F9F9F9;
+	border-radius: 32px;
+	padding: 16px 26px;
+	font-weight: 500;
 }
 
 .btn-tarif {
@@ -133,21 +167,23 @@ a {
 }
 
 .services-block {
+	position: relative;
 	display: flex;
+	overflow: scroll;
 	gap: 16px;
 }
 
 .services-card {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	background-color: #10192808;
 	border: 1px solid #1019280F;
 	padding: 32px;
 	border-radius: 26px;
-	width: 50%;
 }
 
-.kak-rabotajet {
-	background-color: #F9F9F9;
-	border-radius: 26px;
-}
+.kak-rabotajet {}
 
 .workit-block {
 	display: flex;
@@ -156,6 +192,8 @@ a {
 
 .kak-rabotajet-card-container {
 	display: flex;
+	background-color: #F9F9F9;
+	border-radius: 26px;
 	flex-wrap: wrap;
 	padding: 26px;
 	gap: 26px;
