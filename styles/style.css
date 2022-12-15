@@ -326,7 +326,7 @@ details[open]>summary::after {
 /* FAQ */
 
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
 	.main {
 		padding-left: 16px;
 		padding-right: 16px;
@@ -403,9 +403,21 @@ details[open]>summary::after {
 
 	.kak-rabotajet-card {}
 
+	.tarif {
+		width: 100%;
+	}
+
 	.tarif-block {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.adults {
+		width: 100%;
+	}
+
+	.children {
+		width: 100%;
 	}
 
 	.reviews {
