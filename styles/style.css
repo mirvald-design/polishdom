@@ -324,3 +324,27 @@ details[open]>summary::after {
 }
 
 /* FAQ */
+
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+	.header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.title {
+		font: 24px;
+		line-height: 48px;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	.subtitle {
+		font-size: 12px;
+		line-height: 24px;
+	}
+}
