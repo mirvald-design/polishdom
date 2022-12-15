@@ -401,9 +401,7 @@ details[open]>summary::after {
 		flex-direction: column;
 	}
 
-	.kak-rabotajet-card {
-		width: 100%;
-	}
+	.kak-rabotajet-card {}
 
 	.tarif-block {
 		display: flex;
