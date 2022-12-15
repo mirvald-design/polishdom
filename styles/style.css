@@ -374,6 +374,7 @@ details[open]>summary::after {
 	.about {
 		display: flex;
 		flex-direction: column;
+		padding: 16px;
 	}
 
 	.about-block-2 {
