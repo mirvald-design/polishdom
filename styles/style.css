@@ -59,6 +59,11 @@ span {
 	gap: 16px;
 }
 
+.nav-item a {
+	font-size: 14px;
+	font-weight: 500;
+}
+
 .btn-kons {
 	background-color: #F9F9F9;
 	border-radius: 26px;
