@@ -389,4 +389,9 @@ details[open]>summary::after {
 	.kak-rabotajet-card {
 		width: 100%;
 	}
+
+	.tarif-block {
+		display: flex;
+		flex-direction: column;
+	}
 }
