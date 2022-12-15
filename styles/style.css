@@ -332,6 +332,10 @@ details[open]>summary::after {
 		flex-direction: column;
 	}
 
+	.header img {
+		width: 268px;
+	}
+
 	.nav {
 		display: none;
 	}
@@ -346,5 +350,34 @@ details[open]>summary::after {
 	.subtitle {
 		font-size: 12px;
 		line-height: 24px;
+		text-align: center;
+	}
+
+	.btn-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.btn-tarif {
+		text-align: center;
+	}
+
+	.btn-test {
+		text-align: center;
+	}
+
+	.about {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.services-block {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.workit-block {
+		display: flex;
+		flex-direction: column;
 	}
 }
