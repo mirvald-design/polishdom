@@ -392,6 +392,10 @@ details[open]>summary::after {
 		flex-direction: column;
 	}
 
+	.services-card {
+		padding: 16px;
+	}
+
 	.workit-block {
 		display: flex;
 		flex-direction: column;
