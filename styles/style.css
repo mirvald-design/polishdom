@@ -293,50 +293,55 @@ span {
 		font-weight: 700;
 	}
 
+	.question {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		border-radius: 32px;
+	}
 
 	.questions-container {
+		display: flex;
+		border-radius: 32px;
+		flex-direction: column;
+		gap: 16px;
 		max-width: 1080px;
 		margin: 0 auto;
 	}
 
-	.question {
-		border-bottom: 1px solid #fff;
-	}
 
 	.question button {
-		width: 100%;
-		background-color: #000;
 		display: flex;
+		width: 100%;
+		border-radius: 32px;
 		justify-content: space-between;
 		align-items: center;
-		padding: 20px 15px;
-		border: none;
-		outline: none;
+		padding: 32px;
 		font-size: 22px;
-		color: #fff;
-		font-weight: 700;
 		cursor: pointer;
+		background-color: transparent;
+		border: 1px solid #1019281A;
 	}
 
 	.question p {
-		font-size: 22px;
+		font-size: 14px;
 		max-height: 0;
 		opacity: 0;
 		line-height: 1.5;
 		overflow: hidden;
-		transition: all 0.6s ease;
+		transition: all 0.9s ease;
 	}
 
 	.d-arrow {
 		transition: transform 0.5s ease-in;
-		color: #fff;
+		color: #000;
 	}
 
 	/*add this class when click*/
 	.question p.show {
 		max-height: 200px;
 		opacity: 1;
-		padding: 0px 15px 30px 15px;
+		padding: 0px 32px 32px 32px;
 	}
 
 	.question button .d-arrow.rotate {
@@ -585,58 +590,60 @@ span {
 	}
 
 	/* FAQ */
-	title {
-		font-size: 50px;
-		text-align: center;
-		margin-top: 80px;
-		margin-bottom: 40px;
-		text-decoration: underline 4px;
-	}
-
-
-	.questions-container {
-		max-width: 800px;
-		margin: 0 auto;
+	.faq-title {
+		font-size: 20px;
+		font-weight: 700;
 	}
 
 	.question {
-		border-bottom: 1px solid #fff;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		border-radius: 32px;
 	}
 
-	.question button {
-		width: 100%;
-		background-color: #000;
+	.questions-container {
 		display: flex;
+		border-radius: 32px;
+		flex-direction: column;
+		gap: 16px;
+		max-width: 1080px;
+		margin: 0 auto;
+	}
+
+
+	.question button {
+		display: flex;
+		border-radius: 16px;
 		justify-content: space-between;
 		align-items: center;
-		padding: 20px 15px;
-		border: none;
-		outline: none;
-		font-size: 22px;
-		color: #fff;
-		font-weight: 700;
+		padding: 16px;
+		font-size: 14px;
+		font-weight: 500;
 		cursor: pointer;
+		background-color: transparent;
+		border: 1px solid #1019281A;
 	}
 
 	.question p {
-		font-size: 22px;
+		font-size: 14px;
 		max-height: 0;
 		opacity: 0;
 		line-height: 1.5;
 		overflow: hidden;
-		transition: all 0.6s ease;
+		transition: all 0.9s ease;
 	}
 
 	.d-arrow {
 		transition: transform 0.5s ease-in;
-		color: #fff;
+		color: #000;
 	}
 
 	/*add this class when click*/
 	.question p.show {
-		max-height: 200px;
+		max-height: 1200px;
 		opacity: 1;
-		padding: 0px 15px 30px 15px;
+		padding: 0px 16px 16px 16px;
 	}
 
 	.question button .d-arrow.rotate {
@@ -644,5 +651,6 @@ span {
 	}
 
 	/* FAQ */
+
 
 }
