@@ -367,7 +367,7 @@ span {
 	.btn-tarif {
 		text-align: center;
 		background-color: #34C759;
-		border-radius: 32px;
+		border-radius: 16px;
 		padding: 16px 28px;
 		color: white;
 		font-size: 14px;
@@ -378,7 +378,7 @@ span {
 	.btn-test {
 		text-align: center;
 		border: 1px solid#34C759;
-		border-radius: 32px;
+		border-radius: 16px;
 		padding: 16px 28px;
 		color: #34C759;
 		font-size: 14px;
@@ -388,7 +388,7 @@ span {
 
 	.btn-contact {
 		background-color: #34C759;
-		border-radius: 26px;
+		border-radius: 16px;
 		text-align: center;
 		padding: 12px 26px;
 		color: #fff;
@@ -411,7 +411,7 @@ span {
 		gap: 16px;
 		padding: 16px;
 		border: 1px solid #1019280F;
-		border-radius: 32px;
+		border-radius: 16px;
 	}
 
 	.about-block-2 {
@@ -435,7 +435,7 @@ span {
 		align-items: center;
 		justify-content: center;
 		background-color: #F9F9F9;
-		border-radius: 32px;
+		border-radius: 16px;
 		padding: 16px 26px;
 		font-weight: 500;
 	}
@@ -443,7 +443,7 @@ span {
 	.btn-tarif {
 		background-color: #34C759;
 		padding: 16px 26px;
-		border-radius: 26px;
+		border-radius: 16px;
 		color: #fff;
 		font-size: 16px;
 		line-height: 28px;
@@ -462,7 +462,7 @@ span {
 		gap: 16px;
 		border: 1px solid #1019280F;
 		padding: 16px;
-		border-radius: 32px;
+		border-radius: 16px;
 	}
 
 	.services {
@@ -475,7 +475,7 @@ span {
 		display: flex;
 		flex-direction: column;
 		background-color: #F9F9F9;
-		border-radius: 32px;
+		border-radius: 16px;
 		padding: 16px;
 		gap: 16px;
 	}
@@ -491,7 +491,7 @@ span {
 		flex-direction: column;
 		text-align: center;
 		background-color: white;
-		border-radius: 32px;
+		border-radius: 16px;
 		padding: 16px;
 		align-items: center;
 	}
@@ -511,7 +511,7 @@ span {
 		flex-direction: column;
 		gap: 12px;
 		border: 1px solid #1019280F;
-		border-radius: 32px;
+		border-radius: 16px;
 		padding: 16px;
 	}
 
@@ -534,14 +534,14 @@ span {
 		display: flex;
 		flex-direction: column;
 		background-color: #F9F9F9;
-		border-radius: 32px;
+		border-radius: 16px;
 		padding: 16px;
 		gap: 16px;
 	}
 
 	.reviews-card {
 		background-color: #fff;
-		border-radius: 26px;
+		border-radius: 16px;
 		padding: 16px;
 		text-align: left;
 	}
