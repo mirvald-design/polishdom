@@ -321,7 +321,7 @@ span {
 		justify-content: space-between;
 		align-items: center;
 		padding: 32px;
-		color: #000;
+		color: #101928;
 		cursor: pointer;
 		background-color: transparent;
 		border: 1px solid #1019281A;
@@ -338,7 +338,7 @@ span {
 
 	.d-arrow {
 		transition: transform 0.5s ease-in;
-		color: #000;
+		color: #101928;
 	}
 
 	/*add this class when click*/
@@ -357,6 +357,7 @@ span {
 }
 
 @media only screen and (max-width: 768px) {
+
 	.main {
 		display: flex;
 		flex-direction: column;
@@ -376,7 +377,7 @@ span {
 	.burger-icon {
 		display: flex;
 		flex-direction: column;
-		gap: 2.5px;
+		gap: 2px;
 		background-color: #F9F9F9;
 		border-radius: 32px;
 		height: 32px;
@@ -391,8 +392,8 @@ span {
 
 	.burger-icon-bar {
 		width: 10px;
-		height: 1.5px;
-		background-color: black;
+		height: 2px;
+		background-color: #101928;
 		margin: px 0;
 	}
 
@@ -674,7 +675,7 @@ span {
 		justify-content: space-between;
 		align-items: center;
 		padding: 16px;
-		color: #000;
+		color: #101928;
 		font-weight: 500;
 		cursor: pointer;
 		background-color: transparent;
@@ -692,7 +693,7 @@ span {
 
 	.d-arrow {
 		transition: transform 0.5s ease-in;
-		color: #000;
+		color: #101928;
 	}
 
 	/*add this class when click*/

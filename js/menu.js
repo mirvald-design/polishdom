@@ -1,6 +1,6 @@
-const burgerMenu = document.getElementById("burger-menu");
-const navigation = document.getElementById("navigation");
+const burgerIcon = document.getElementsByClassName("burger-icon");
+const navigation = document.getElementsByClassName("navigation");
 
-burgerMenu.addEventListener("click", function () {
+burgerIcon.addEventListener("click", function () {
 	navigation.classList.toggle("active");
 });
