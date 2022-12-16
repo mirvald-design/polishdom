@@ -238,17 +238,7 @@ span {
 		gap: 16px;
 	}
 
-	.adults {
-		display: flex;
-		flex-direction: column;
-		gap: 12px;
-		border: 1px solid #1019280F;
-		border-radius: 26px;
-		padding: 32px;
-		width: 50%;
-	}
-
-	.children {
+	.tarif-card {
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
@@ -498,10 +488,16 @@ span {
 	.tarif-block {
 		display: flex;
 		flex-direction: column;
+		gap: 16px;
 	}
 
-	.adults {
-		width: 100%;
+	.tarif-card {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		border: 1px solid #1019280F;
+		border-radius: 32px;
+		padding: 16px;
 	}
 
 	.children {
