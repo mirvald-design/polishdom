@@ -448,10 +448,16 @@ span {
 	.services-block {
 		display: flex;
 		flex-direction: column;
+		gap: 16px;
 	}
 
 	.services-card {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		border: 1px solid #1019280F;
 		padding: 16px;
+		border-radius: 32px;
 	}
 
 	.workit-block {
