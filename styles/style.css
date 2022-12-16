@@ -16,6 +16,7 @@ h4 {
 	font-size: 16px;
 	margin: 0;
 	font-weight: 700;
+	text-align: left;
 }
 
 p {
@@ -317,7 +318,7 @@ span {
 		justify-content: space-between;
 		align-items: center;
 		padding: 32px;
-		font-size: 22px;
+		color: #000;
 		cursor: pointer;
 		background-color: transparent;
 		border: 1px solid #1019281A;
@@ -618,7 +619,7 @@ span {
 		justify-content: space-between;
 		align-items: center;
 		padding: 16px;
-		font-size: 14px;
+		color: #000;
 		font-weight: 500;
 		cursor: pointer;
 		background-color: transparent;
