@@ -259,32 +259,25 @@ span {
 /* Reviews */
 .reviews {
 	display: flex;
+	flex-direction: column;
 	background-color: #F9F9F9;
 	border-radius: 26px;
 	padding: 26px;
 	gap: 16px;
 }
 
-.reviews-block1 {
+.reviews-block {
 	display: flex;
-	flex-direction: column;
 	gap: 16px;
-	width: 50%;
 }
 
-.reviews-block2 {
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-	width: 50%;
-}
 
 .reviews-card {
-	display: inline-block;
 	background-color: #fff;
 	border-radius: 26px;
 	padding: 26px;
 	text-align: left;
+	width: 50%;
 }
 
 .avatar-clients {
