@@ -1,18 +1,11 @@
-const questions = document.querySelectorAll('.question');
+const buttons = document.querySelectorAll('button');
 
-questions.forEach(question => {
-	const btn = question.querySelector('h3');
-	const content = question.querySelector('p');
+buttons.forEach(button => {
+	button.addEventListener('click', () => {
+		const faq = button.nextElementSibling;
+		const icon = button.children[1];
 
-	btn.addEventListener('click', () => {
-		content.classList.toggle('active');
-
-		if (content.style.maxHeight) {
-			content.style.maxHeight = null;
-			btn.textContent = btn.textContent.replace('Hide', 'Show');
-		} else {
-			content.style.maxHeight = content.scrollHeight + "px";
-			btn.textContent = btn.textContent.replace('Show', 'Hide');
-		}
-	});
-});
+		faq.classList.toggle('show');
+		icon.classList.toggle('rotate');
+	})
+})
