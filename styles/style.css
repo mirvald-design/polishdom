@@ -176,14 +176,14 @@ span {
 	.services {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: 32px;
 	}
 
 	.services-block {
 		position: relative;
 		display: flex;
 		overflow: scroll;
-		gap: 16px;
+		gap: 32px;
 	}
 
 	.services-card {
@@ -198,7 +198,7 @@ span {
 
 	.workit-block {
 		display: flex;
-		gap: 16px;
+		gap: 32px;
 	}
 
 	.kak-rabotajet-card-container {
@@ -207,7 +207,7 @@ span {
 		border-radius: 26px;
 		flex-wrap: wrap;
 		padding: 26px;
-		gap: 26px;
+		gap: 32px;
 	}
 
 	.kak-rabotajet-card {
@@ -235,7 +235,7 @@ span {
 
 	.tarif-block {
 		display: flex;
-		gap: 16px;
+		gap: 32px;
 	}
 
 	.tarif-card {
@@ -255,12 +255,12 @@ span {
 		background-color: #F9F9F9;
 		border-radius: 26px;
 		padding: 26px;
-		gap: 16px;
+		gap: 32px;
 	}
 
 	.reviews-block {
 		display: flex;
-		gap: 16px;
+		gap: 32px;
 	}
 
 
@@ -304,7 +304,7 @@ span {
 		display: flex;
 		border-radius: 32px;
 		flex-direction: column;
-		gap: 16px;
+		gap: 32px;
 		max-width: 1080px;
 		margin: 0 auto;
 	}
