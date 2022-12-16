@@ -460,12 +460,36 @@ span {
 		border-radius: 32px;
 	}
 
+	.services {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.kak-rabotajet-card-container {
+		display: flex;
+		flex-direction: column;
+		background-color: #F9F9F9;
+		border-radius: 32px;
+		padding: 16px;
+		gap: 16px;
+	}
+
 	.workit-block {
 		display: flex;
 		flex-direction: column;
+		gap: 16px;
 	}
 
-	.kak-rabotajet-card {}
+	.kak-rabotajet-card {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		background-color: white;
+		border-radius: 32px;
+		padding: 16px;
+		align-items: center;
+	}
 
 	.tarif {
 		width: 100%;
