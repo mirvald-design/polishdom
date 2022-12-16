@@ -504,9 +504,31 @@ span {
 		width: 100%;
 	}
 
+	.avatar-clients {
+		width: 48px;
+		height: 48px;
+	}
+
+	.avatar-block {
+		display: flex;
+		gap: 12px;
+		align-items: center;
+	}
+
 	.reviews {
 		display: flex;
 		flex-direction: column;
+		background-color: #F9F9F9;
+		border-radius: 32px;
+		padding: 16px;
+		gap: 16px;
+	}
+
+	.reviews-card {
+		background-color: #fff;
+		border-radius: 26px;
+		padding: 16px;
+		text-align: left;
 	}
 
 	.reviews-block1 {
