@@ -531,6 +531,12 @@ span {
 		text-align: left;
 	}
 
+	.reviews-block {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
 	.reviews-block1 {
 		display: flex;
 		flex-direction: column;
