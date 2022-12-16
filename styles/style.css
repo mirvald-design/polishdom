@@ -130,6 +130,9 @@ span {
 
 
 .about-btn {
+	display: flex;
+	gap: 16px;
+	align-items: center;
 	background-color: #F9F9F9;
 	border-radius: 32px;
 	padding: 16px 26px;
@@ -351,15 +354,15 @@ details[open]>summary::after {
 	}
 
 	.title {
-		font-size: 24px;
-		line-height: 48px;
+		font-size: 32px;
+		line-height: 64px;
 		font-weight: 700;
 		text-align: center;
 	}
 
 	.subtitle {
-		font-size: 12px;
-		line-height: 24px;
+		font-size: 14px;
+		line-height: 28px;
 		text-align: center;
 	}
 
@@ -434,4 +437,5 @@ details[open]>summary::after {
 		display: flex;
 		flex-direction: column;
 	}
+
 }
