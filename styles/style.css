@@ -288,38 +288,28 @@ span {
 	/* Reviews */
 
 	/* FAQ */
-	.faq {
-		display: flex;
-		flex-direction: column;
-		gap: 16px;
+	#faq {
+		width: 80%;
+		margin: 0 auto;
 	}
 
-	details {
-		display: flex;
-		border: 1px solid #1019280F;
-		border-radius: 26px;
-		padding: 26px;
-		justify-content: space-between;
+	.question {
+		margin-bottom: 20px;
 	}
 
-	summary {
-		display: flex;
-		justify-content: space-between;
-		font-size: 16px;
-		font-weight: 600;
-		line-height: 32px;
-
+	.question h3 {
+		font-size: 18px;
+		color: #333;
+		margin-bottom: 10px;
 	}
 
-	details>summary::after {
-		content: "+";
-	}
-
-	details[open]>summary::after {
-		content: "-";
+	.question p {
+		font-size: 14px;
+		color: #666;
 	}
 
 	/* FAQ */
+
 }
 
 @media only screen and (max-width: 768px) {
