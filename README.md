@@ -1,2 +1,2 @@
-# polski-school
-Website Online School Polish
+# Polishdom.com
+Website Online School Polishdom
