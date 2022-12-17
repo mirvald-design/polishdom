@@ -77,6 +77,10 @@ span {
 		font-weight: 500;
 	}
 
+	.nav-item a:hover {
+		color: #34C759;
+	}
+
 	.btn-kons {
 		background-color: #F9F9F9;
 		border-radius: 26px;
