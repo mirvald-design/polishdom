@@ -167,6 +167,7 @@ span {
 
 	.btn-tarif:hover {
 		cursor: pointer;
+		background-color: #32D74B;
 		transition: all 0.2s ease-out 0s;
 		transform: rotate(2.5deg);
 		font-weight: 500;
@@ -198,6 +199,15 @@ span {
 		text-align: center;
 		padding: 12px 26px;
 		color: #fff;
+		font-weight: 500;
+	}
+
+	.btn-contact:hover {
+		cursor: pointer;
+		background-color: #32D74B;
+		transition: all 0.2s ease-out 0s;
+		transform: rotate(2.5deg);
+		font-weight: 500;
 	}
 
 
@@ -216,12 +226,15 @@ span {
 
 	.services-card {
 		display: flex;
+		background-color: #fff;
 		flex-direction: column;
 		gap: 16px;
 		border: 1px solid #1019280F;
 		padding: 32px;
 		border-radius: 26px;
 	}
+
+
 
 
 	.workit-block {
@@ -248,6 +261,7 @@ span {
 		padding: 26px;
 		width: 50%;
 	}
+
 
 	.kak-rabotajet-card img {
 		height: 55px;
