@@ -150,6 +150,7 @@ span {
 	}
 
 	.btn-tarif {
+		transition: all 0.3s ease-out 0s;
 		background-color: #34C759;
 		padding: 16px 26px;
 		border-radius: 26px;
@@ -157,6 +158,13 @@ span {
 		font-size: 16px;
 		line-height: 28px;
 		height: fit-content;
+		font-weight: 500;
+	}
+
+	.btn-tarif:hover {
+		cursor: pointer;
+		transition: all 0.2s ease-out 0s;
+		transform: rotate(2.5deg);
 		font-weight: 500;
 	}
 
