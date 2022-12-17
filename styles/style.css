@@ -638,6 +638,9 @@ span {
 	}
 
 	.reviews-card {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
 		background-color: #fff;
 		border-radius: 16px;
 		padding: 16px;
