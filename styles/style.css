@@ -4,6 +4,10 @@ body {
 	font-family: 'Jost', sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 h1 {
 	margin-bottom: 16px;
 	font-size: 18px;
