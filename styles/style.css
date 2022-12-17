@@ -40,6 +40,7 @@ span {
 
 @media screen and (min-width: 1024px) and (max-width: 2560px) {
 
+
 	.main {
 		display: flex;
 		flex-direction: column;
@@ -247,6 +248,15 @@ span {
 	}
 
 	.kak-rabotajet-card-container {
+		display: flex;
+		background-color: #F9F9F9;
+		border-radius: 26px;
+		flex-wrap: wrap;
+		padding: 26px;
+		gap: 32px;
+	}
+
+	.how-to-start {
 		display: flex;
 		background-color: #F9F9F9;
 		border-radius: 26px;
