@@ -270,6 +270,7 @@ span {
 		border-radius: 26px;
 		padding: 32px;
 		width: 50%;
+		align-items: center;
 	}
 
 	/* Reviews */
