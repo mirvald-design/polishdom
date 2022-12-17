@@ -157,9 +157,11 @@ span {
 		font-size: 16px;
 		line-height: 28px;
 		height: fit-content;
+		font-weight: 500;
 	}
 
 	.btn-test {
+		transition: all 0.3s ease-out 0s;
 		border: 1px solid #34C759;
 		padding: 16px 26px;
 		border-radius: 26px;
@@ -167,6 +169,15 @@ span {
 		color: #34C759;
 		font-size: 16px;
 		line-height: 28px;
+		font-weight: 500;
+	}
+
+	.btn-test:hover {
+		cursor: pointer;
+		transition: all 0.2s ease-out 0s;
+		box-shadow: #34C759 0px 0px 0px 5px;
+		transform: rotate(2.5deg);
+		font-weight: 500;
 	}
 
 	.btn-contact {
@@ -476,6 +487,7 @@ span {
 	}
 
 	.btn-test {
+
 		text-align: center;
 		border: 1px solid#34C759;
 		border-radius: 16px;
