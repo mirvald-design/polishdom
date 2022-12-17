@@ -91,6 +91,7 @@ span {
 		border-radius: 26px;
 		gap: 32px;
 		align-items: center;
+		justify-content: space-between;
 	}
 
 	.title {
@@ -450,6 +451,7 @@ span {
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
+		width: 100%;
 	}
 
 	.btn-tarif {
@@ -536,6 +538,7 @@ span {
 		font-size: 16px;
 		line-height: 28px;
 		height: fit-content;
+
 	}
 
 	.services-block {
