@@ -297,7 +297,7 @@ span {
 	.tarif-card {
 		display: flex;
 		flex-direction: column;
-		gap: 12px;
+		gap: 16px;
 		border: 1px solid #1019280F;
 		border-radius: 26px;
 		padding: 32px;
