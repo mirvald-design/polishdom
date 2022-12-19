@@ -273,14 +273,13 @@ span {
 	}
 
 	.kak-rabotajet-card {
-		transition: all .3s ease-in-out;
 		display: flex;
+		transition: all .3s ease-in-out;
 		flex-direction: column;
-		align-items: center;
-		text-align: center;
+		text-align: left;
 		background-color: #fff;
-		border-radius: 26px;
-		padding: 26px;
+		border-radius: 24px;
+		padding: 12px 24px;
 		width: 50%;
 		box-shadow: 0 4px 8px #0000000a, 0 8px 16px #00000005, 0 0 0 1px #0000000a;
 	}
@@ -661,11 +660,14 @@ span {
 	.kak-rabotajet-card {
 		display: flex;
 		flex-direction: column;
-		text-align: center;
 		background-color: white;
 		border-radius: 16px;
 		padding: 16px;
-		align-items: center;
+	}
+
+	.kak-rabotajet-card img {
+		height: 55px;
+		width: 55px;
 	}
 
 	.tarif {
