@@ -618,16 +618,15 @@ span {
 
 	.services-block {
 		display: flex;
-		flex-wrap: wrap;
+		overflow: scroll;
 		gap: 16px;
 	}
 
 	.services-card {
-		display: flex;
+		width: fit-content;
 		border: 1px solid #14151D1A;
 		padding: 12px 24px;
-		border-radius: 16px;
-		width: fit-content;
+		border-radius: 32px;
 	}
 
 	.services {
