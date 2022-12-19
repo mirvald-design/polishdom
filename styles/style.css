@@ -531,13 +531,16 @@ span {
 
 	.btn-test {
 		text-align: center;
-		border: 1px solid#6E61FF;
-		border-radius: 32px;
+		background-color: #fff;
+		transition: all 0.3s ease-out 0s;
+		border: 2px solid #14151D;
 		padding: 12px 24px;
-		color: #6E61FF;
-		font-size: 14px;
-		line-height: 28px;
-		font-weight: 600;
+		border-radius: 26px;
+		height: fit-content;
+		font-size: 16px;
+		line-height: 32px;
+		font-weight: 500;
+		box-shadow: 3px 3px 0px 0px #14151D;
 	}
 
 	.btn-contact {
@@ -553,10 +556,6 @@ span {
 		font-size: 24px;
 		line-height: 48px;
 		font-weight: 700;
-	}
-
-	.btn-test {
-		text-align: center;
 	}
 
 	.about {
