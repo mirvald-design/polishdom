@@ -529,23 +529,11 @@ span {
 		width: 100%;
 	}
 
-	.btn-tarif {
-		text-align: center;
-		background-color: #6E61FF;
-		border-radius: 16px;
-		padding: 16px 28px;
-		color: white;
-		font-size: 14px;
-		line-height: 28px;
-		font-weight: 600;
-	}
-
 	.btn-test {
-
 		text-align: center;
 		border: 1px solid#6E61FF;
-		border-radius: 16px;
-		padding: 16px 28px;
+		border-radius: 32px;
+		padding: 12px 24px;
 		color: #6E61FF;
 		font-size: 14px;
 		line-height: 28px;
@@ -606,14 +594,17 @@ span {
 	}
 
 	.btn-tarif {
+		text-align: center;
+		transition: all 0.3s ease-out 0s;
 		background-color: #6E61FF;
-		padding: 16px 26px;
-		border-radius: 16px;
+		padding: 12px 24px;
+		border-radius: 32px;
 		color: #fff;
 		font-size: 16px;
-		line-height: 28px;
-		height: fit-content;
-
+		line-height: 32px;
+		font-weight: 500;
+		box-shadow: 3px 3px 0px 0px #14151D;
+		border: 2px solid #14151D
 	}
 
 	.services-block {
