@@ -602,9 +602,8 @@ span {
 		align-items: center;
 		justify-content: center;
 		background-color: #F9F9F9;
-		border-radius: 16px;
-		padding: 16px 26px;
-		font-weight: 500;
+		border-radius: 32px;
+		padding: 12px 24px;
 	}
 
 	.btn-tarif {
