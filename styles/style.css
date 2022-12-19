@@ -429,8 +429,7 @@ span {
 	.main {
 		display: flex;
 		flex-direction: column;
-
-		gap: 32px;
+		gap: 64px;
 		padding-left: 16px;
 		padding-right: 16px;
 	}
