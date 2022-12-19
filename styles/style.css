@@ -564,7 +564,7 @@ span {
 		gap: 16px;
 		padding: 16px;
 		border: 1px solid #1019280F;
-		border-radius: 16px;
+		border-radius: 32px;
 	}
 
 	.about-block-2 {
@@ -613,10 +613,16 @@ span {
 	}
 
 	.services-card {
+		display: flex;
 		width: fit-content;
 		border: 1px solid #14151D1A;
 		padding: 12px 24px;
 		border-radius: 32px;
+		font-size: 16px;
+		line-height: 32px;
+		font-weight: 500;
+		text-align: left;
+		white-space: nowrap;
 	}
 
 	.services {
