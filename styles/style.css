@@ -226,9 +226,8 @@ span {
 	}
 
 	.services-block {
-		position: relative;
 		display: flex;
-		overflow: scroll;
+		flex-wrap: wrap;
 		gap: 16px;
 	}
 
@@ -619,17 +618,16 @@ span {
 
 	.services-block {
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
 		gap: 16px;
 	}
 
 	.services-card {
 		display: flex;
-		flex-direction: column;
-		gap: 16px;
-		border: 1px solid #1019280F;
-		padding: 16px;
+		border: 1px solid #14151D1A;
+		padding: 12px 24px;
 		border-radius: 16px;
+		width: fit-content;
 	}
 
 	.services {
