@@ -108,6 +108,10 @@ span {
 		gap: 32px;
 	}
 
+	.header img {
+		width: 428px;
+	}
+
 	.title {
 		font-size: 64px;
 		font-weight: 600;
@@ -222,7 +226,7 @@ span {
 	.services {
 		display: flex;
 		flex-direction: column;
-		gap: 32px;
+		gap: 12px;
 	}
 
 	.services-block {
@@ -255,8 +259,8 @@ span {
 		background-color: #F9F9F9;
 		border-radius: 26px;
 		flex-wrap: wrap;
-		padding: 26px;
-		gap: 32px;
+		padding: 12px 24px;
+		gap: 12px;
 	}
 
 	.how-to-start {
@@ -627,7 +631,7 @@ span {
 	.services {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: 12px;
 	}
 
 	.kak-rabotajet-card-container {
