@@ -215,16 +215,21 @@ span {
 
 	.btn-contact {
 		background-color: #6E61FF;
+		transition: all 0.3s ease-out 0s;
 		border-radius: 26px;
 		text-align: center;
 		padding: 12px 26px;
 		color: #fff;
 		font-weight: 500;
+		box-shadow: 3px 3px 0px 0px #14151D;
+		border: 2px solid #14151D
 	}
+
 
 	.btn-contact:hover {
 		cursor: pointer;
-		background-color: #32D74B;
+		background-color: #6E61FF;
+		box-shadow: none;
 		transition: all 0.2s ease-out 0s;
 		transform: rotate(2.5deg);
 		font-weight: 500;
