@@ -321,6 +321,7 @@ span {
 		border-radius: 26px;
 		padding: 32px;
 		width: 50%;
+		height: fit-content;
 	}
 
 	.tarif-card h3 {
