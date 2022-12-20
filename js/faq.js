@@ -1,11 +1,9 @@
-const buttons = document.querySelectorAll('button');
+$(document).ready(function () {
+	// Hide all answers by default
+	$('.answer').hide();
 
-buttons.forEach(button => {
-	button.addEventListener('click', () => {
-		const faq = button.nextElementSibling;
-		const icon = button.children[1];
-
-		faq.classList.toggle('show');
-		icon.classList.toggle('rotate');
-	})
-})
+	// Show answer when question is clicked
+	$('.question1').click(function () {
+		$(this).siblings('.answer').slideToggle();
+	});
+});

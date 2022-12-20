@@ -224,12 +224,12 @@ span {
 	}
 
 	.btn-contact {
-		background-color: #6E61FF;
+		background-color: #FFFFFF;
 		transition: all 0.3s ease-out 0s;
-		border-radius: 26px;
+		border-radius: 24px;
 		text-align: center;
-		padding: 12px 26px;
-		color: #fff;
+		padding: 12px 24px;
+		color: #14151D;
 		font-weight: 500;
 		box-shadow: 3px 3px 0px 0px #14151D;
 		border: 2px solid #14151D
@@ -243,6 +243,7 @@ span {
 		transition: all 0.2s ease-out 0s;
 		transform: rotate(2.5deg);
 		font-weight: 500;
+		color: #fff;
 	}
 
 
@@ -271,7 +272,7 @@ span {
 
 	.workit-block {
 		display: flex;
-		gap: 32px;
+		gap: 12px;
 	}
 
 	.kak-rabotajet-card-container {
@@ -330,7 +331,21 @@ span {
 		gap: 12px;
 	}
 
+	.tutors {
+		display: flex;
+		flex-direction: column;
+		background-color: #F9F9F9;
+		padding: 24px;
+		border-radius: 24px;
+		gap: 12px;
+	}
+
 	.tarif-block {
+		display: flex;
+		gap: 12px;
+	}
+
+	.tutor-block {
 		display: flex;
 		gap: 12px;
 	}
@@ -347,6 +362,64 @@ span {
 		height: fit-content;
 	}
 
+	.tarif1 {
+		background-image: url(/img/tarif1.png);
+		background-size: cover;
+		width: 280px;
+		height: 140px;
+	}
+
+	.tarif2 {
+		background-image: url(/img/tarif2.png);
+		background-size: cover;
+		width: 280px;
+		height: 140px;
+	}
+
+	.tarif3 {
+		background-image: url(/img/tarif3.png);
+		background-size: cover;
+		width: 280px;
+		height: 140px;
+	}
+
+
+	.tutor-card {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		background-color: #fff;
+		border: 1px solid #14151D1A;
+		border-radius: 24px;
+		padding: 24px;
+		width: 50%;
+		height: fit-content;
+	}
+
+	.img-tutor1 {
+		background-image: url(/img/tuto1.png);
+		background-size: cover;
+		border-radius: 24px;
+		width: 128px;
+		height: 128px;
+	}
+
+	.img-tutor2 {
+		background-image: url(/img/tutor2.png);
+		background-size: cover;
+		border-radius: 24px;
+		width: 128px;
+		height: 128px;
+	}
+
+	.img-tutor3 {
+		background-image: url(/img/tutor3.png);
+		background-size: cover;
+		border-radius: 24px;
+		width: 128px;
+		height: 128px;
+	}
+
 	.tarif-card h3 {
 		font-size: 16px;
 		line-height: 23px;
@@ -358,14 +431,14 @@ span {
 		display: flex;
 		flex-direction: column;
 		background-color: #F9F9F9;
-		border-radius: 26px;
-		padding: 26px;
-		gap: 32px;
+		border-radius: 24px;
+		padding: 24px;
+		gap: 12px;
 	}
 
 	.reviews-block {
 		display: flex;
-		gap: 32px;
+		gap: 12px;
 	}
 
 
@@ -374,10 +447,11 @@ span {
 		flex-direction: column;
 		gap: 16px;
 		background-color: #fff;
-		border-radius: 26px;
-		padding: 26px;
+		border-radius: 24px;
+		padding: 24px;
 		text-align: left;
 		width: 50%;
+		border: 1px solid #14151D1A;
 	}
 
 	.avatar-clients {
@@ -396,64 +470,29 @@ span {
 	/* Reviews */
 
 	/* FAQ */
-	.faq-title {
-		font-size: 20px;
-		font-weight: 700;
+	.faq {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		background-color: #F9F9F9;
+		padding: 24px;
+		border-radius: 24px;
 	}
 
 	.question {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
-		border-radius: 32px;
+		gap: 12px;
+		background-color: #fff;
+		border-radius: 24px;
+		padding: 24px;
+		cursor: pointer;
 	}
 
-	.questions-container {
+	.question1 {
 		display: flex;
-		border-radius: 32px;
-		flex-direction: column;
-		gap: 32px;
-		max-width: 1080px;
-		margin: 0 auto;
-	}
-
-
-	.question button {
-		display: flex;
-		width: 100%;
-		border-radius: 32px;
 		justify-content: space-between;
 		align-items: center;
-		padding: 32px;
-		color: #101928;
-		cursor: pointer;
-		background-color: transparent;
-		border: 1px solid #1019281A;
-	}
-
-	.question p {
-		font-size: 14px;
-		max-height: 0;
-		opacity: 0;
-		line-height: 1.5;
-		overflow: hidden;
-		transition: all 0.9s ease;
-	}
-
-	.d-arrow {
-		transition: transform 0.5s ease-in;
-		color: #101928;
-	}
-
-	/*add this class when click*/
-	.question p.show {
-		max-height: 200px;
-		opacity: 1;
-		padding: 0px 32px 32px 32px;
-	}
-
-	.question button .d-arrow.rotate {
-		transform: rotate(180deg);
 	}
 
 	/* FAQ */
@@ -461,6 +500,19 @@ span {
 }
 
 @media only screen and (max-width: 768px) {
+	h1 {
+		margin: 0px;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 26px;
+	}
+
+	h2 {
+		margin: 0px;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 23px;
+	}
 
 	.main {
 		display: flex;
@@ -546,7 +598,7 @@ span {
 
 	.title {
 		font-size: 32px;
-		line-height: 64px;
+		line-height: 46px;
 		font-weight: 700;
 	}
 
@@ -568,7 +620,7 @@ span {
 		transition: all 0.3s ease-out 0s;
 		border: 2px solid #14151D;
 		padding: 12px 24px;
-		border-radius: 26px;
+		border-radius: 24px;
 		height: fit-content;
 		font-size: 16px;
 		line-height: 32px;
@@ -577,11 +629,15 @@ span {
 	}
 
 	.btn-contact {
-		background-color: #6E61FF;
-		border-radius: 16px;
+		background-color: #FFFFFF;
+		transition: all 0.3s ease-out 0s;
+		border-radius: 24px;
 		text-align: center;
-		padding: 12px 26px;
-		color: #fff;
+		padding: 12px 24px;
+		color: #14151D;
+		font-weight: 500;
+		box-shadow: 3px 3px 0px 0px #14151D;
+		border: 2px solid #14151D
 	}
 
 	.price {
@@ -594,10 +650,16 @@ span {
 	.about {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
-		padding: 16px;
+		gap: 12px;
+		padding: 24px 12px;
 		border: 1px solid #1019280F;
-		border-radius: 32px;
+		border-radius: 24px;
+	}
+
+	.about-block-1 {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
 	}
 
 	.about-block-2 {
@@ -668,9 +730,9 @@ span {
 		display: flex;
 		flex-direction: column;
 		background-color: #F9F9F9;
-		border-radius: 16px;
-		padding: 16px;
-		gap: 16px;
+		border-radius: 24px;
+		padding: 24px 12px;
+		gap: 12px;
 	}
 
 	.how-to-start {
@@ -692,8 +754,8 @@ span {
 		display: flex;
 		flex-direction: column;
 		background-color: white;
-		border-radius: 16px;
-		padding: 16px;
+		border-radius: 24px;
+		padding: 24px 12px;
 	}
 
 	.kak-rabotajet-card img {
@@ -701,8 +763,47 @@ span {
 		width: 55px;
 	}
 
+	.tarif-card {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		background-color: #fff;
+		border: 1px solid #14151D1A;
+		border-radius: 16px;
+		padding: 16px;
+	}
+
 	.tarif {
+		display: flex;
+		flex-direction: column;
+		background-color: #F9F9F9;
+		padding: 24px 12px;
+		border-radius: 24px;
+		gap: 12px;
+	}
+
+	.tarif1 {
+		background-image: url(/img/tarif1.png);
+		background-size: cover;
 		width: 100%;
+		height: 140px;
+		border-radius: 24px;
+	}
+
+	.tarif2 {
+		background-image: url(/img/tarif2.png);
+		background-size: cover;
+		width: 100%;
+		height: 140px;
+		border-radius: 24px;
+	}
+
+	.tarif3 {
+		background-image: url(/img/tarif3.png);
+		background-size: cover;
+		width: 100%;
+		height: 140px;
+		border-radius: 24px;
 	}
 
 	.tarif-block {
@@ -711,17 +812,61 @@ span {
 		gap: 16px;
 	}
 
-	.tarif-card {
-		display: flex;
-		flex-direction: column;
-		gap: 12px;
-		border: 1px solid #1019280F;
-		border-radius: 16px;
-		padding: 16px;
-	}
+
 
 	.tarif-card h3 {
 		text-align: center;
+	}
+
+	.tutors {
+		display: flex;
+		flex-direction: column;
+		background-color: #F9F9F9;
+		padding: 24px 12px;
+		border-radius: 24px;
+		gap: 12px;
+	}
+
+	.tutor-block {
+		display: flex;
+		overflow: scroll;
+		gap: 12px;
+	}
+
+	.tutor-card {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		background-color: #fff;
+		border: 1px solid #14151D1A;
+		border-radius: 24px;
+		padding: 24px 12px;
+		min-width: 238px;
+		height: fit-content;
+	}
+
+	.img-tutor1 {
+		background-image: url(/img/tuto1.png);
+		background-size: cover;
+		border-radius: 24px;
+		width: 64px;
+		height: 64px;
+	}
+
+	.img-tutor2 {
+		background-image: url(/img/tutor2.png);
+		background-size: cover;
+		border-radius: 24px;
+		width: 64px;
+		height: 64px;
+	}
+
+	.img-tutor3 {
+		background-image: url(/img/tutor3.png);
+		background-size: cover;
+		border-radius: 24px;
+		width: 64px;
+		height: 64px;
 	}
 
 	.children {
@@ -743,18 +888,19 @@ span {
 		display: flex;
 		flex-direction: column;
 		background-color: #F9F9F9;
-		border-radius: 16px;
-		padding: 16px;
-		gap: 16px;
+		border-radius: 24px;
+		padding: 24px 12px;
+		gap: 12px;
 	}
 
 	.reviews-card {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: 12px;
 		background-color: #fff;
-		border-radius: 16px;
-		padding: 16px;
+		border: 1px solid #14151D1A;
+		border-radius: 24px;
+		padding: 24px 12px;
 		text-align: left;
 	}
 
@@ -771,67 +917,38 @@ span {
 	}
 
 	/* FAQ */
-	.faq-title {
-		font-size: 20px;
-		font-weight: 700;
+	.faq {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		background-color: #F9F9F9;
+		padding: 24px 12px;
+		border-radius: 24px;
 	}
 
 	.question {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
-		border-radius: 32px;
+		gap: 12px;
+		background-color: #fff;
+		border: 1px solid #14151D1A;
+		border-radius: 24px;
+		padding: 24px 12px;
+		cursor: pointer;
 	}
 
-	.questions-container {
+	.question1 {
 		display: flex;
-		border-radius: 32px;
-		flex-direction: column;
-		gap: 16px;
-		max-width: 1080px;
-		margin: 0 auto;
-	}
-
-
-	.question button {
-		display: flex;
-		border-radius: 16px;
 		justify-content: space-between;
 		align-items: center;
-		padding: 16px;
-		color: #101928;
-		font-weight: 500;
-		cursor: pointer;
-		background-color: transparent;
-		border: 1px solid #1019281A;
-	}
-
-	.question p {
-		font-size: 14px;
-		max-height: 0;
-		opacity: 0;
-		line-height: 1.5;
-		overflow: hidden;
-		transition: all 0.9s ease;
-	}
-
-	.d-arrow {
-		transition: transform 0.5s ease-in;
-		color: #101928;
-	}
-
-	/*add this class when click*/
-	.question p.show {
-		max-height: 1200px;
-		opacity: 1;
-		padding: 0px 16px 16px 16px;
-	}
-
-	.question button .d-arrow.rotate {
-		transform: rotate(180deg);
 	}
 
 	/* FAQ */
+	.footer {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
 
 
 }
