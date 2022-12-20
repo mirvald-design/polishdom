@@ -136,6 +136,14 @@ span {
 		border: 1px solid #1019280F;
 		border-radius: 32px;
 		padding: 32px;
+		align-items: center;
+	}
+
+
+	.about p {
+		font-size: 14px;
+		line-height: 28px;
+		font-weight: 400;
 	}
 
 
@@ -515,13 +523,11 @@ span {
 		font-size: 32px;
 		line-height: 64px;
 		font-weight: 700;
-		text-align: center;
 	}
 
 	.subtitle {
 		font-size: 14px;
 		line-height: 28px;
-		text-align: center;
 	}
 
 	.btn-container {
