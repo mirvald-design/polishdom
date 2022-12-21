@@ -590,6 +590,7 @@ span {
 		flex-direction: column;
 		gap: 16px;
 		width: 100%;
+		align-items: center;
 	}
 
 	.nav {
@@ -605,6 +606,7 @@ span {
 	.subtitle {
 		font-size: 14px;
 		line-height: 28px;
+		text-align: center;
 	}
 
 	.btn-container {
@@ -612,6 +614,7 @@ span {
 		flex-direction: column;
 		gap: 12px;
 		width: 100%;
+		align-items: center;
 	}
 
 	.btn-test {
@@ -626,6 +629,7 @@ span {
 		line-height: 32px;
 		font-weight: 500;
 		box-shadow: 3px 3px 0px 0px #14151D;
+		width: fit-content;
 	}
 
 	.btn-contact {
@@ -692,13 +696,14 @@ span {
 		transition: all 0.3s ease-out 0s;
 		background-color: #6E61FF;
 		padding: 12px 24px;
-		border-radius: 32px;
+		border-radius: 24px;
 		color: #fff;
 		font-size: 16px;
 		line-height: 32px;
 		font-weight: 500;
 		box-shadow: 3px 3px 0px 0px #14151D;
-		border: 2px solid #14151D
+		border: 2px solid #14151D;
+		width: fit-content;
 	}
 
 	.services-block {
