@@ -36,6 +36,34 @@ span {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 2560px) {
+	.tooltip {
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		background-color: black;
+		color: #fff;
+		border-radius: 24px;
+		padding: 12px 24px;
+		position: absolute;
+		z-index: 1;
+		bottom: -1000%;
+		left: 78%;
+		margin-left: -60px;
+		opacity: 0;
+		transition: opacity 0.3s;
+
+	}
+
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+		opacity: 1;
+		cursor: pointer;
+	}
+
 	h1 {
 		margin: 0px;
 		font-size: 22px;
@@ -353,7 +381,7 @@ span {
 	.tarif-card {
 		display: flex;
 		flex-direction: column;
-		gap: 24px;
+		gap: 12px;
 		background-color: #fff;
 		border: 1px solid #14151D1A;
 		border-radius: 24px;
@@ -362,25 +390,44 @@ span {
 		height: fit-content;
 	}
 
-	.tarif1 {
-		background-image: url(/img/tarif1.png);
-		background-size: cover;
-		width: 280px;
-		height: 140px;
+	.container-package {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
 	}
 
-	.tarif2 {
-		background-image: url(/img/tarif2.png);
-		background-size: cover;
-		width: 280px;
-		height: 140px;
+	.package-card {
+
+		border-radius: 24px;
+		padding: 12px;
+		border: 1px solid rgba(5, 6, 15, 0.1);
+		width: fit-content;
 	}
 
-	.tarif3 {
-		background-image: url(/img/tarif3.png);
+	.adult {
+		background-image: url(/img/tarif/adult.jpg);
 		background-size: cover;
 		width: 280px;
 		height: 140px;
+		border-radius: 24px;
+	}
+
+
+
+	.child {
+		background-image: url(/img/tarif/child.jpg);
+		background-size: cover;
+		width: 280px;
+		height: 140px;
+		border-radius: 24px;
+	}
+
+	.group {
+		background-image: url(/img/tarif/group.jpg);
+		background-size: cover;
+		width: 280px;
+		height: 140px;
+		border-radius: 24px;
 	}
 
 
@@ -424,6 +471,7 @@ span {
 		font-size: 16px;
 		line-height: 23px;
 		font-weight: 500;
+		margin: 0;
 	}
 
 	/* Reviews */
@@ -645,7 +693,6 @@ span {
 	}
 
 	.price {
-		text-align: center;
 		font-size: 22px;
 		line-height: 32px;
 		font-weight: 500;
@@ -787,24 +834,37 @@ span {
 		gap: 12px;
 	}
 
-	.tarif1 {
-		background-image: url(/img/tarif1.png);
+	.container-package {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+	}
+
+	.package-card {
+		border-radius: 24px;
+		padding: 12px;
+		border: 1px solid rgba(5, 6, 15, 0.1);
+		width: fit-content;
+	}
+
+	.adult {
+		background-image: url(/img/tarif/adult.jpg);
 		background-size: cover;
 		width: 100%;
 		height: 140px;
 		border-radius: 24px;
 	}
 
-	.tarif2 {
-		background-image: url(/img/tarif2.png);
+	.child {
+		background-image: url(/img/tarif/child.jpg);
 		background-size: cover;
 		width: 100%;
 		height: 140px;
 		border-radius: 24px;
 	}
 
-	.tarif3 {
-		background-image: url(/img/tarif3.png);
+	.group {
+		background-image: url(/img/tarif/group.jpg);
 		background-size: cover;
 		width: 100%;
 		height: 140px;
@@ -820,7 +880,10 @@ span {
 
 
 	.tarif-card h3 {
-		text-align: center;
+		font-size: 16px;
+		line-height: 23px;
+		font-weight: 500;
+		margin: 0;
 	}
 
 	.tutors {
