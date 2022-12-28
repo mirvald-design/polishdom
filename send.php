@@ -8,7 +8,7 @@ $phone = $data['phone'];
 
 // Set your bot's API token and chat ID
 $api_token = "5888482946:AAH48A_SlXa1XvJlnOPkPcXdOFwCdjHzwF8";
-$chat_id = "1001707722226";
+$chat_id = "-1001707722226";
 
 // Build the message to send to the bot
 $message = "New contact form submission: \n\nName: $name \nEmail: $email \nPhone: $phone";
