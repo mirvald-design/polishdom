@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 
-@app.route('/index.html', methods=['POST'])
+@app.route('/form.html', methods=['POST'])
 def send_to_telegram():
     # Get the user's name, email, and phone number from the form submission
     name = request.form['name']
