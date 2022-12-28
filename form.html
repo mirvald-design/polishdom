@@ -19,36 +19,7 @@
 		</form>
 
 	</body>
-	<script>
-		// Get the form element
-		var form = document.getElementById('contact-form');
-
-		// Add an event listener for the submit event
-		form.addEventListener('submit', function (event) {
-			// Prevent the form from submitting
-			event.preventDefault();
-
-			// Get the user's name, email, and phone number from the form
-			var name = form.elements.name.value;
-			var email = form.elements.email.value;
-			var phone = form.elements.phone.value;
-
-			// Send the user's input to the server-side PHP script using an AJAX request
-			fetch('/send.php', {
-				method: 'POST',
-				body: JSON.stringify({
-					name: name,
-					email: email,
-					phone: phone
-				}),
-				headers: {
-					'Content-Type': 'application/json'
-				}
-			}).then(function (response) {
-				// Do something with the response here
-				console.log(response);
-			});
-		});
-	</script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="./main.js"></script>
 
 	</html>>
