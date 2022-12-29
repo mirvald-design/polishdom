@@ -60,22 +60,23 @@
 	<!-- End Google Tag Manager (noscript) -->
 	<div class="main">
 		<!-- mobile menu -->
-		<div class='mobile-menu'>
-			<div class="logo"><img src='/img/logo.svg'></div>
-			<div class="burger-icon">
-				<div class="burger-icon-bar"></div>
-				<div class="burger-icon-bar"></div>
-				<div class="burger-icon-bar"></div>
+		<nav class="mobile-menu">
+			<div class="menu-toggle">
+				<span><img src='/img/logo.svg'></span>
+				<i class="fas fa-bars"></i>
+				<span><img src='/img/menu-burger.svg'></span>
 			</div>
+			<ul class="menu-items">
+				<li><a href=" #about">О школе</a></li>
+				<li><a href="#services">Кому подойдет</a></li>
+				<li><a href="#kak-rabotajet-card-container">Обучения</a></li>
+				<li><a href="#tarif">Стоимость</a></li>
+				<li><a href="#tutors">Преподаватели</a></li>
+				<li><a href="#reviews">Отзывы</a></li>
+				<li><a href="#faq">FAQ</a></li>
+			</ul>
+		</nav>
 
-			<nav class="navigation">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
 		<!-- mobile menu -->
 
 		<!-- Navigation -->
@@ -586,9 +587,10 @@
 	</div>
 
 	</div>
-
+	<script async src="/js/burger.js"></script>
 </body>
 <script async src="/js/faq.js"></script>
+
 <!-- CRISP -->
 <script
 	type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "1ed362ef-9013-47e2-af12-f01bd6dd3a05"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
