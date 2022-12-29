@@ -646,9 +646,10 @@ span {
 	}
 
 	.title {
-		font-size: 32px;
-		line-height: 46px;
+		font-size: 30px;
+		line-height: normal;
 		font-weight: 700;
+		text-align: center;
 	}
 
 	.subtitle {
