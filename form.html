@@ -8,21 +8,50 @@
 		<meta name="description" content="">
 
 	<body>
-		<div class="container">
-			<div class="log-form">
-				<h2>Отправка формы в телеграм</h2>
-				<form class="telegram-form">
-					<input type="text" name="name" placeholder="Имя" autocomplete="off" />
-					<input type="text" name="phone" placeholder="Телефон" autocomplete="off" />
-					<input type="text" name="email" placeholder="Email" autocomplete="off" />
-					<textarea name="text"></textarea>
-					<input type="file" name="file">
-					<button type="submit" class="btn">отправить</button>
-				</form>
-			</div>
-		</div>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="./main.js"></script>
+		<form id="contact-form">
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" name="name"><br>
+			<label for="number">Number:</label><br>
+			<input type="text" id="number" name="number"><br><br>
+			<button type="submit">Submit</button>
+		</form>
+
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script>
+			// Add a submit event listener to the form
+			document.getElementById('contact-form').addEventListener('submit', function (event) {
+				// Prevent the form from actually submitting
+				event.preventDefault();
+
+				// Get the form data
+				var formData = new FormData(event.target);
+
+				// Send the form data to the server using Axios
+				axios.post('/process-form', formData).then(function (response) {
+					// Send the form data to the Telegram bot
+					sendDataToTelegramBot(formData);
+
+					// Display a success message
+					alert('Form submitted successfully!');
+				}).catch(function (error) {
+					// Display an error message
+					alert('An error occurred: ' + error);
+				});
+			});
+
+			function sendDataToTelegramBot(formData) {
+				// Replace YOUR_BOT_TOKEN and CHAT_ID with your bot's token and the chat ID of the chat you want to send the message to
+				var bot_token = '5888482946:AAH48A_SlXa1XvJlnOPkPcXdOFwCdjHzwF8';
+				var chat_id = '-1001707722226';
+
+				// Set the message text and send the message
+				var message_text = 'Name: ' + formData.get('name') + '\nNumber: ' + formData.get('number');
+				axios.post('https://api.telegram.org/bot' + bot_token + '/sendMessage', {
+					'chat_id': chat_id,
+					'text': message_text
+				});
+			}
+		</script>
 	</body>
 
 
