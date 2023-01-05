@@ -174,7 +174,7 @@ span {
 
 	.footer-right-part {
 		display: flex;
-		flex-direction: column;
+		gap: 132px;
 	}
 
 	.footer-up-part {
@@ -184,7 +184,20 @@ span {
 
 	.footer-botoom-part {
 		display: flex;
+
 		justify-content: space-between;
+	}
+
+	.footer-nav {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.footer-contact {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
 	}
 
 	/*footer */
@@ -306,15 +319,13 @@ span {
 	}
 
 	.btn-contact {
-		background-color: #FFFFFF;
+		background-color: #E5F33C;
 		transition: all 0.3s ease-out 0s;
 		border-radius: 24px;
 		text-align: center;
-		padding: 12px 24px;
+		padding: 20px 24px;
 		color: #14151D;
 		font-weight: 500;
-		box-shadow: 3px 3px 0px 0px #14151D;
-		border: 2px solid #14151D
 	}
 
 
