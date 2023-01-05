@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	background-color: #fff;
 	font-family: 'Jost', sans-serif;
+	color: #05060F;
 }
 
 html {
@@ -98,11 +99,39 @@ span {
 	}
 
 	.nav {
+		position: sticky;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: auto;
+		z-index: 10;
+		display: flex;
+		width: 100%;
+		height: 80px;
+		padding: 10px 32px;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex: 0 0 auto;
+		border-bottom: 1px solid rgba(5, 6, 15, .04);
+		background-color: #fff;
+		transition: opacity .1s;
+	}
+
+	.nav-wrap {
+		display: flex;
+		max-width: 1080px;
+		margin-right: auto;
+		margin-left: auto;
+		justify-content: space-between;
+		align-items: center;
+		flex: 1;
+	}
+
+	.nav-inner {
 		display: flex;
 		align-items: center;
-		padding-bottom: 12px;
-		justify-content: space-between;
-		border-bottom: 2px solid #F9F9F9;
+		gap: 24px;
 	}
 
 	.nav-item {
@@ -116,7 +145,7 @@ span {
 	}
 
 	.nav-item a:hover {
-		color: #6E61FF;
+		color: #E5F33C;
 	}
 
 	.btn-kons {
@@ -128,10 +157,37 @@ span {
 		font-weight: 500;
 	}
 
+	/* footer */
 	.footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 80px;
+	}
+
+	.footer-left-part {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		align-items: flex-start;
+	}
+
+	.footer-right-part {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer-up-part {
 		display: flex;
 		justify-content: space-between;
 	}
+
+	.footer-botoom-part {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	/*footer */
 
 	/* Navigation */
 
@@ -152,15 +208,16 @@ span {
 	}
 
 	.title {
-		font-size: 64px;
-		line-height: 92px;
-		font-weight: 600;
+		font-size: 54px;
+		line-height: normal;
+		letter-spacing: -2%;
+		font-weight: 700;
 	}
 
 	.subtitle {
-		font-size: 16px;
-		line-height: 23px;
-		font-weight: 500;
+		font-size: 20px;
+		line-height: normal;
+		font-weight: 400;
 	}
 
 	.btn-container {
@@ -209,25 +266,22 @@ span {
 	}
 
 	.btn-tarif {
-		transition: all 0.3s ease-out 0s;
-		background-color: #6E61FF;
-		padding: 12px 24px;
+		transition: all 0.2s ease-out 0s;
+		background-color: #E5F33C;
+		padding: 20px 24px;
 		border-radius: 24px;
-		color: #fff;
-		font-size: 14px;
-		line-height: 20px;
+		color: #05060F;
+		font-size: 20px;
+		line-height: normal;
 		height: fit-content;
-		font-weight: 500;
-		box-shadow: 3px 3px 0px 0px #14151D;
-		border: 2px solid #14151D
+		font-weight: 700;
 	}
 
 	.btn-tarif:hover {
 		cursor: pointer;
-		box-shadow: none;
 		transition: all 0.2s ease-out 0s;
 		transform: rotate(2.5deg);
-		font-weight: 500;
+		font-weight: 700;
 	}
 
 	.btn-test {
@@ -266,7 +320,7 @@ span {
 
 	.btn-contact:hover {
 		cursor: pointer;
-		background-color: #6E61FF;
+		background-color: #E5F33C;
 		box-shadow: none;
 		transition: all 0.2s ease-out 0s;
 		transform: rotate(2.5deg);
@@ -275,27 +329,36 @@ span {
 	}
 
 
+
 	.services {
 		display: flex;
-		flex-direction: column;
+		overflow: hidden;
+		background-color: #F9F9F9;
 		gap: 12px;
-	}
-
-	.services-block {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 16px;
-	}
-
-	.services-card {
-		display: flex;
-		background-color: #fff;
-		border: 1px solid #1019280F;
-		padding: 12px 24px;
+		padding: 20px 24px;
 		border-radius: 24px;
 	}
 
+	.services-crawl {
+		display: flex;
+		gap: 24px;
+		animation: run-animation 135s linear infinite;
+	}
 
+	.services-card {
+		width: fit-content;
+		padding: 12px;
+	}
+
+	@keyframes run-animation {
+		from {
+			transform: translateX(0);
+		}
+
+		to {
+			transform: translateX(-100%);
+		}
+	}
 
 
 	.workit-block {
@@ -608,6 +671,7 @@ span {
 		background: #f1f1f1;
 	}
 
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -634,28 +698,38 @@ span {
 	}
 
 	/* Mobile menu */
+	.mobile-menu {
+		background-color: #fff;
+	}
 
 	.menu-items {
 		display: none;
+		transform: translateY(0px) translateX(0px);
+		transition: transform 400ms ease 0s;
 	}
 
 	.menu-items.open {
 		display: block;
-
+		box-shadow: 1px 1px 10px 20px hsl(0deg 0% 83% / 16%);
 	}
 
 	.menu-toggle {
 		display: flex;
+		background-color: #fff;
 		cursor: pointer;
 		align-items: center;
 		justify-content: space-between;
 		padding: 16px 0px 16px 0px;
+		transform: translateY(0px) translateX(0px);
+		transition: transform 400ms ease 0s;
 	}
 
 	.menu-items {
 		list-style: none;
 		margin: 0;
 		padding: 0;
+		transform: translateY(0px) translateX(0px);
+		transition: transform 400ms ease 0s;
 
 	}
 
@@ -838,7 +912,7 @@ span {
 	.btn-tarif {
 		text-align: center;
 		transition: all 0.3s ease-out 0s;
-		background-color: #6E61FF;
+		background-color: #E5F33C;
 		padding: 12px 24px;
 		border-radius: 24px;
 		color: #fff;
