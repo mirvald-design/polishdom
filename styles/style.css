@@ -442,6 +442,7 @@ span {
 		border: 1px solid rgba(16, 25, 40, 0.1);
 		padding: 16px;
 		gap: 12px;
+		width: 50%;
 	}
 
 	.price {
