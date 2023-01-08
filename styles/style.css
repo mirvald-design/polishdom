@@ -10,15 +10,6 @@ html {
 }
 
 
-
-
-h4 {
-	font-size: 16px;
-	margin: 0;
-	font-weight: 700;
-	text-align: left;
-}
-
 p {
 	margin: 0;
 	font-weight: 400;
@@ -37,6 +28,34 @@ span {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 2560px) {
+	h1 {
+		font-size: 36px;
+		font-weight: 500;
+		line-height: normal;
+		margin: 0;
+	}
+
+	h2 {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: normal;
+		margin: 0;
+	}
+
+	h3 {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: normal;
+		margin: 0;
+	}
+
+	h4 {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: normal;
+		margin: 0;
+	}
+
 	.tooltip {
 		position: relative;
 		display: inline-block;
@@ -63,20 +82,6 @@ span {
 		visibility: visible;
 		opacity: 1;
 		cursor: pointer;
-	}
-
-	h1 {
-		margin: 0px;
-		font-size: 22px;
-		font-weight: 500;
-		line-height: 32px;
-	}
-
-	h2 {
-		margin: 0px;
-		font-size: 16px;
-		font-weight: 500;
-		line-height: 23px;
 	}
 
 	.main {
@@ -215,6 +220,9 @@ span {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		background-color: #F5F7FA;
+		border-radius: 24px;
+		padding: 64px;
 	}
 
 	.header-1 {
@@ -228,9 +236,8 @@ span {
 	}
 
 	.title {
-		font-size: 54px;
+		font-size: 50px;
 		line-height: normal;
-		letter-spacing: -2%;
 		font-weight: 700;
 	}
 
@@ -348,11 +355,11 @@ span {
 	}
 
 
-
+	/* services */
 	.services {
 		display: flex;
 		overflow: hidden;
-		background-color: #F9F9F9;
+		background-color: #F1F2FB;
 		gap: 12px;
 		padding: 20px 24px;
 		border-radius: 24px;
@@ -379,6 +386,30 @@ span {
 		}
 	}
 
+	/* services */
+
+	/* Why-us */
+	.Why-us-container {
+		background-color: #F1F2FB;
+		padding: 56px 64px 60px;
+		border-radius: 24px;
+	}
+
+	.Why-us {
+		display: flex;
+		gap: 24px;
+	}
+
+	.Why-us-card {
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		padding: 16px 16px 16px;
+		border-radius: 24px;
+		gap: 16px;
+	}
+
+	/* Why-us */
 
 	.workit-block {
 		display: flex;
@@ -387,11 +418,11 @@ span {
 
 	.kak-rabotajet-card-container {
 		display: flex;
-		background-color: #F9F9F9;
+		background-color: #E5E4E2;
 		border-radius: 24px;
 		flex-wrap: wrap;
-		padding: 24px;
-		gap: 12px;
+		padding: 56px 64px 60px;
+		gap: 24px;
 	}
 
 	.how-to-start {
@@ -399,31 +430,18 @@ span {
 		background-color: #F9F9F9;
 		border-radius: 26px;
 		flex-wrap: wrap;
-		padding: 26px;
+		padding: 56px 64px 60px;
 		gap: 32px;
 	}
 
 	.kak-rabotajet-card {
 		display: flex;
-		transition: all .3s ease-in-out;
 		flex-direction: column;
-		text-align: left;
 		background-color: #fff;
 		border-radius: 24px;
-		padding: 24px;
+		border: 1px solid rgba(16, 25, 40, 0.1);
+		padding: 16px;
 		gap: 12px;
-		width: 50%;
-		box-shadow: 0 4px 8px #0000000a, 0 8px 16px #00000005, 0 0 0 1px #0000000a;
-	}
-
-	.kak-rabotajet-card:hover {
-		transform: translateY(-8px);
-	}
-
-
-	.kak-rabotajet-card img {
-		height: 55px;
-		width: 55px;
 	}
 
 	.price {
@@ -436,7 +454,7 @@ span {
 		display: flex;
 		flex-direction: column;
 		background-color: #F9F9F9;
-		padding: 24px;
+		padding: 56px 64px 60px;
 		border-radius: 24px;
 		gap: 12px;
 	}
@@ -452,7 +470,7 @@ span {
 
 	.tarif-block {
 		display: flex;
-		gap: 12px;
+		gap: 24px;
 	}
 
 	.tutor-block {
@@ -468,8 +486,6 @@ span {
 		border: 1px solid #14151D1A;
 		border-radius: 24px;
 		padding: 24px;
-		width: 50%;
-		height: fit-content;
 	}
 
 	.container-package {
@@ -560,15 +576,29 @@ span {
 	.reviews {
 		display: flex;
 		flex-direction: column;
-		background-color: #F9F9F9;
+		background-color: #F1F2FB;
 		border-radius: 24px;
-		padding: 24px;
+		padding: 56px 64px 60px;
 		gap: 12px;
 	}
 
 	.reviews-block {
 		display: flex;
 		gap: 12px;
+	}
+
+	.reviews-block-right {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		width: 50%;
+	}
+
+	.reviews-block-left {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		width: 50%;
 	}
 
 
@@ -580,7 +610,6 @@ span {
 		border-radius: 24px;
 		padding: 24px;
 		text-align: left;
-		width: 50%;
 		border: 1px solid #14151D1A;
 	}
 
@@ -605,7 +634,7 @@ span {
 		flex-direction: column;
 		align-items: center;
 		gap: 12px;
-		background-color: #F9F9F9;
+		background-color: #F1F2FB;
 		padding: 24px;
 		border-radius: 24px;
 	}
@@ -619,6 +648,7 @@ span {
 		padding: 24px;
 		cursor: pointer;
 		width: 756px;
+		border: 1px solid rgba(5, 6, 15, 0.1)
 	}
 
 	.question1 {
@@ -630,13 +660,14 @@ span {
 	/* FAQ */
 
 	/* Any more questions? */
-	.contact {
+	.Any-more-questions {
 		display: flex;
 		flex-direction: column;
-		background-color: #F9F9F9;
+		gap: 16px;
+		background-color: #4153E2;
 		border-radius: 24px;
 		align-items: center;
-		padding: 24px;
+		padding: 56px 64px 60px;
 	}
 
 	/* Any more questions? */
@@ -958,11 +989,38 @@ span {
 		width: fit-content;
 	}
 
-	.services-block {
+	/* services */
+	.services {
 		display: flex;
-		overflow: scroll;
-		gap: 16px;
+		overflow: hidden;
+		background-color: #F9F9F9;
+		gap: 12px;
+		padding: 20px 24px;
+		border-radius: 24px;
 	}
+
+	.services-crawl {
+		display: flex;
+		gap: 24px;
+		animation: run-animation 135s linear infinite;
+	}
+
+	.services-card {
+		width: fit-content;
+		padding: 12px;
+	}
+
+	@keyframes run-animation {
+		from {
+			transform: translateX(0);
+		}
+
+		to {
+			transform: translateX(-100%);
+		}
+	}
+
+	/* services */
 
 	.services-card {
 		display: flex;
