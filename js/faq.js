@@ -3,7 +3,7 @@ $(document).ready(function () {
 	$('.answer').hide();
 
 	// Show answer when question is clicked
-	$('.question1').click(function () {
+	$(document).on('click', '.question1', function () {
 		$(this).siblings('.answer').slideToggle();
 	});
 });
