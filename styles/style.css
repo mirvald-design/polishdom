@@ -1018,6 +1018,7 @@ button {
 		background-image: url(/img/mobile-header.svg);
 		background-repeat: no-repeat;
 		height: 80vh;
+		background-position: center;
 	}
 
 	.header-wrapper {
