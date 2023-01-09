@@ -1011,7 +1011,6 @@ button {
 		padding: 16px;
 		background-image: url(/img/header.svg);
 		background-repeat: no-repeat;
-		height: 80vh;
 		background-position: center;
 		gap: 32px;
 	}
