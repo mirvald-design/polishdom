@@ -45,7 +45,7 @@ span {
 
 	h2 {
 		font-size: 18px;
-		font-weight: 600;
+		font-weight: 500;
 		line-height: normal;
 		margin: 0;
 	}
@@ -108,6 +108,10 @@ span {
 
 	/* Navigation */
 	.mobile-menu {
+		display: none;
+	}
+
+	.menu-items {
 		display: none;
 	}
 
