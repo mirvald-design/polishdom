@@ -111,13 +111,42 @@
 					с тщательно выбранным преподавателем
 				</p>
 				<div class="btn-container">
-					<a href='https://t.me/polishdom'>
-						<div class="btn-tarif">Попробовать бесплатно 🔥</div>
-					</a>
+
+					<div id="form-button" class="btn-tarif">Попробовать бесплатно 🔥</div>
+
 				</div>
 			</div>
 		</div>
 		<!-- Header -->
+
+		<!-- HTML for the form modal -->
+		<div id="form-modal" class="modal">
+
+
+			<div class="modal-content">
+				<div>
+
+				</div>
+				<h1 style='text-align: center;'>Запишись на пробный урок</h1>
+				<h3 style='text-align: center;'>Чтобы записаться на пробный урок,
+					оставьте свои данные и мы свяжемся Вами в ближайшее время!</h3>
+
+				<form id="contact-form">
+					<input type="text" id="name" name="name" placeholder="Ваше имя"><br>
+					<input type="text" id="phone" name="phone" placeholder="Ваш номер"><br>
+					<input type="text" id="telegram" name="telegram" placeholder="Ваш email"><br><br>
+
+					<div style='display:flex; flex-direction: column; gap: 16px;'>
+						<input class='btn-submit' type="submit" value="Записаться" placeholder="Ваше имя">
+						<span class='close' type="submit" value="Закрыть">Закрыть</span>
+					</div>
+					<h style='text-align: center;'>Я согласен(а) с Договором публичной оферты</h4>
+
+				</form>
+			</div>
+		</div>
+
+
 
 		<!-- Для кого подойдет -->
 		<div class="services" id='services'>
@@ -673,7 +702,7 @@
 
 	</footer>
 	<script async src="/js/burger.js"></script>
-	<script async src="/js/contact.js"></script>
+	<script async src="/js/form.js"></script>
 </body>
 
 
