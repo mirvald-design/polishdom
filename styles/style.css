@@ -149,12 +149,15 @@ span {
 	}
 
 	.nav-item a {
-		font-size: 14px;
-		font-weight: 500;
+		font-size: 16px;
+		font-weight: 400;
 	}
 
 	.nav-item a:hover {
-		color: #E5F33C;
+		color: #05060F;
+		font-size: 16px;
+		font-weight: 400;
+		text-decoration: underline;
 	}
 
 	.btn-kons {
