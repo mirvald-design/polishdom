@@ -104,17 +104,9 @@ span {
 	}
 
 	.nav {
-		position: sticky;
-		left: 0;
-		top: 0;
-		right: 0;
-		bottom: auto;
-		z-index: 10;
 		display: flex;
-		width: 100%;
-		height: 80px;
-		padding: 10px 32px;
-		flex-direction: row;
+		position: sticky;
+		padding: 10px 180px;
 		justify-content: center;
 		align-items: center;
 		flex: 0 0 auto;
@@ -430,11 +422,10 @@ span {
 
 	.how-to-start {
 		display: flex;
-		background-color: #F9F9F9;
-		border-radius: 26px;
+		background-color: #F1F9FB;
 		flex-wrap: wrap;
-		padding: 56px 64px 60px;
-		gap: 32px;
+		padding: 64px;
+		gap: 16px;
 	}
 
 	.kak-rabotajet-card {
@@ -464,10 +455,10 @@ span {
 	.tutors {
 		display: flex;
 		flex-direction: column;
-		background-color: #F9F9F9;
-		padding: 24px;
-		border-radius: 24px;
-		gap: 12px;
+		background-color: #F5F7FA;
+		padding: 64px;
+		gap: 16px;
+		background-image: url(/img/tutor.svg);
 	}
 
 	.tarif-block {
@@ -544,28 +535,27 @@ span {
 	.reviews {
 		display: flex;
 		flex-direction: column;
-		background-color: #F1F2FB;
-		border-radius: 24px;
-		padding: 56px 64px 60px;
-		gap: 12px;
+		background-color: #F7FBF1;
+		padding: 64px;
+		gap: 16px;
 	}
 
 	.reviews-block {
 		display: flex;
-		gap: 12px;
+		gap: 16px;
 	}
 
 	.reviews-block-right {
 		display: flex;
 		flex-direction: column;
-		gap: 24px;
+		gap: 16px;
 		width: 50%;
 	}
 
 	.reviews-block-left {
 		display: flex;
 		flex-direction: column;
-		gap: 24px;
+		gap: 16px;
 		width: 50%;
 	}
 
@@ -575,8 +565,7 @@ span {
 		flex-direction: column;
 		gap: 16px;
 		background-color: #fff;
-		border-radius: 24px;
-		padding: 24px;
+		padding: 16px;
 		text-align: left;
 		border: 1px solid #14151D1A;
 	}
@@ -589,7 +578,7 @@ span {
 
 	.avatar-block {
 		display: flex;
-		gap: 12px;
+		gap: 16px;
 		align-items: center;
 	}
 
@@ -601,19 +590,17 @@ span {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 12px;
+		gap: 16px;
 		background-color: #F1F2FB;
-		padding: 24px;
-		border-radius: 24px;
+		padding: 64px;
 	}
 
 	.question {
 		display: flex;
 		flex-direction: column;
-		gap: 12px;
+		gap: 16px;
 		background-color: #fff;
-		border-radius: 24px;
-		padding: 24px;
+		padding: 16px;
 		cursor: pointer;
 		width: 756px;
 		border: 1px solid rgba(5, 6, 15, 0.1)
@@ -633,9 +620,8 @@ span {
 		flex-direction: column;
 		gap: 16px;
 		background-color: #4153E2;
-		border-radius: 24px;
 		align-items: center;
-		padding: 56px 64px 60px;
+		padding: 64px;
 	}
 
 	/* Any more questions? */
@@ -1020,8 +1006,7 @@ span {
 
 	.how-to-start {
 		display: flex;
-		background-color: #F9F9F9;
-		border-radius: 16px;
+		background-color: #F1F9FB;
 		flex-wrap: wrap;
 		padding: 16px;
 		gap: 16px;
