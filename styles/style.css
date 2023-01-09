@@ -307,18 +307,20 @@ button {
 
 	.header {
 		display: flex;
-		align-items: center;
+		align-items: flex-end;
 		justify-content: space-between;
 		background-color: #F5F7FA;
-		padding: 64px;
 		background-image: url(/img/header.svg);
+		padding-right: 64px;
 	}
 
 	.header-wrapper {
 		display: flex;
 		flex-direction: column;
 		gap: 32px;
-		max-width: 525px;
+		padding-left: 64px;
+		padding-top: 64px;
+		padding-bottom: 64px;
 	}
 
 	.header-wrapper button {
@@ -1003,13 +1005,15 @@ button {
 
 	.header {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		background-color: #F5F7FA;
 		padding: 16px;
-		background-image: url(/img/mobile-header.svg);
+		background-image: url(/img/header.svg);
 		background-repeat: no-repeat;
 		height: 80vh;
 		background-position: center;
+		gap: 32px;
 	}
 
 	.header-wrapper {
