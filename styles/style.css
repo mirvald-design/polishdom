@@ -386,7 +386,6 @@ span {
 		}
 	}
 
-
 	/* services */
 
 	/* Why-us */
@@ -459,6 +458,7 @@ span {
 		background-color: #F9F5FA;
 		padding: 64px;
 		gap: 16px;
+		background-image: url(/img/tarif.svg);
 	}
 
 	.tutors {
@@ -705,24 +705,29 @@ span {
 @media only screen and (max-width: 768px) {
 	h1 {
 		margin: 0px;
-		font-size: 18px;
+		font-size: 26px;
 		font-weight: 500;
-		line-height: 26px;
+		line-height: normal;
 	}
 
 	h2 {
 		margin: 0px;
 		font-size: 16px;
 		font-weight: 500;
-		line-height: 23px;
+		line-height: normal;
+	}
+
+	h3 {
+		margin: 0px;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: normal;
 	}
 
 	.main {
 		display: flex;
 		flex-direction: column;
-		gap: 64px;
-		padding-left: 16px;
-		padding-right: 16px;
+		gap: 32px;
 	}
 
 	/* Mobile menu */
@@ -809,9 +814,12 @@ span {
 
 	.header {
 		display: flex;
+		padding: 32px 16px;
+		background-color: #F5F7FA;
 		flex-direction: column;
 		align-items: center;
 		gap: 32px;
+		background-image: url(/img/header.svg);
 	}
 
 	.header img {
@@ -834,22 +842,14 @@ span {
 		font-size: 30px;
 		line-height: normal;
 		font-weight: 700;
-		text-align: center;
 	}
 
 	.subtitle {
-		font-size: 14px;
-		line-height: 28px;
-		text-align: center;
+		font-size: 16px;
+		line-height: normal;
 	}
 
-	.btn-container {
-		display: flex;
-		flex-direction: column;
-		gap: 12px;
-		width: 100%;
-		align-items: center;
-	}
+
 
 	.btn-test {
 		text-align: center;
@@ -867,15 +867,11 @@ span {
 	}
 
 	.btn-contact {
-		background-color: #FFFFFF;
-		transition: all 0.3s ease-out 0s;
-		border-radius: 24px;
+		background-color: #E5F33C;
 		text-align: center;
-		padding: 12px 24px;
-		color: #14151D;
+		padding: 20px 24px;
+		color: #05060F;
 		font-weight: 500;
-		box-shadow: 3px 3px 0px 0px #14151D;
-		border: 2px solid #14151D
 	}
 
 	.price {
@@ -925,80 +921,105 @@ span {
 		padding: 12px 24px;
 	}
 
+	.btn-container {
+		flex-direction: row;
+		width: 100%;
+		align-items: center;
+	}
+
 	.btn-tarif {
 		text-align: center;
-		transition: all 0.3s ease-out 0s;
-		background-color: #E5F33C;
-		padding: 12px 24px;
-		border-radius: 24px;
-		color: #fff;
-		font-size: 16px;
-		line-height: 23px;
-		font-weight: 500;
-		box-shadow: 3px 3px 0px 0px #14151D;
-		border: 2px solid #14151D;
-		width: fit-content;
-	}
-
-	/* services */
-	.services {
-		display: flex;
-		overflow: hidden;
-		background-color: #F9F9F9;
-		gap: 12px;
+		background-color: #ECFF3C;
 		padding: 20px 24px;
-		border-radius: 24px;
-	}
-
-	.services-crawl {
-		display: flex;
-		gap: 24px;
-		animation: run-animation 135s linear infinite;
-	}
-
-	.services-card {
-		width: fit-content;
-		padding: 12px;
-	}
-
-	@keyframes run-animation {
-		from {
-			transform: translateX(0);
-		}
-
-		to {
-			transform: translateX(-100%);
-		}
+		color: #05060F;
+		font-size: 16px;
+		line-height: normal;
+		font-weight: 600;
 	}
 
 	/* services */
-
-	.services-card {
-		display: flex;
-		width: fit-content;
-		border: 1px solid #14151D1A;
-		padding: 12px 24px;
-		border-radius: 32px;
-		font-size: 14px;
-		line-height: 32px;
-		font-weight: 500;
-		text-align: left;
-		white-space: nowrap;
+	.services {
+		position: relative;
+		overflow: hidden;
+		background-color: #ECFF3C;
 	}
 
-	.services {
+	.services-wrapper {
+		display: flex;
+		width: 200%;
+		animation: run-ser 20s linear infinite;
+		align-items: center;
+	}
+
+	.services-card {
+		padding: 12px;
+		white-space: nowrap;
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	@keyframes run-ser {
+		0% {
+			transform: translateX(0%);
+		}
+
+		100% {
+			transform: translateX(-50%);
+		}
+	}
+
+
+	/* services */
+
+	/* Why-us */
+	.Why-us-container {
 		display: flex;
 		flex-direction: column;
-		gap: 12px;
+		gap: 16px;
+		background-color: #F1F2FB;
+		padding: 16px;
+		background-image: url(/img/Why\ us_.svg);
 	}
+
+	.Why-us {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.Why-us-card {
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		padding: 16px 16px 16px;
+		gap: 16px;
+		border: 1px solid rgba(5, 6, 15, 0.1);
+	}
+
+	/* Why-us */
+
+	/*kak-rabotajet-card-container */
 
 	.kak-rabotajet-card-container {
 		display: flex;
+		background-color: #FBF6F1;
+		flex-wrap: wrap;
+		padding: 16px;
+		gap: 16px;
+		background-image: url(/img/How\ does\ the\ training\ go_.svg);
+	}
+
+	.workit-block {
+		display: flex;
 		flex-direction: column;
-		background-color: #F9F9F9;
-		border-radius: 24px;
-		padding: 24px 12px;
-		gap: 12px;
+		gap: 16px;
+	}
+
+	.kak-rabotajet-card {
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+		padding: 16px;
 	}
 
 	.how-to-start {
@@ -1009,43 +1030,36 @@ span {
 		gap: 16px;
 	}
 
-	.workit-block {
-		display: flex;
-		flex-direction: column;
-		gap: 12px;
-	}
-
-	.kak-rabotajet-card {
-		display: flex;
-		flex-direction: column;
-		background-color: white;
-		border-radius: 24px;
-		padding: 24px 12px;
-	}
 
 	.kak-rabotajet-card img {
 		height: 55px;
 		width: 55px;
 	}
 
-	.tarif-card {
+	.tarif-block {
 		display: flex;
 		flex-direction: column;
-		gap: 12px;
-		background-color: #fff;
-		border: 1px solid #14151D1A;
-		border-radius: 16px;
-		padding: 16px;
+		gap: 16px;
 	}
 
 	.tarif {
 		display: flex;
 		flex-direction: column;
-		background-color: #F9F9F9;
-		padding: 24px 12px;
-		border-radius: 24px;
-		gap: 12px;
+		background-color: #F9F5FA;
+		padding: 16px;
+		gap: 16px;
+		background-image: url(/img/tarif.svg);
 	}
+
+	.tarif-card {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		background-color: #fff;
+		border: 1px solid #14151D1A;
+		padding: 16px;
+	}
+
 
 	.container-package {
 		display: flex;
@@ -1084,11 +1098,6 @@ span {
 		border-radius: 24px;
 	}
 
-	.tarif-block {
-		display: flex;
-		flex-direction: column;
-		gap: 16px;
-	}
 
 
 	.tutors {
