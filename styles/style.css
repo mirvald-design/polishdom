@@ -96,18 +96,21 @@ span {
 		border: none;
 		padding: 16px;
 		border-bottom: 1px solid #DEDEDE;
+		font-size: 16px;
 	}
 
 	#telegram {
 		border: none;
 		padding: 16px;
 		border-bottom: 1px solid #DEDEDE;
+		font-size: 16px;
 	}
 
 	#name {
 		border: none;
 		padding: 16px;
 		border-bottom: 1px solid #DEDEDE;
+		font-size: 16px;
 	}
 
 	#name:focus-visible {
@@ -808,6 +811,102 @@ span {
 }
 
 @media only screen and (max-width: 768px) {
+
+	/* CSS for the form modal */
+	.modal {
+		display: none;
+		/* Hidden by default */
+		position: fixed;
+		/* Stay in place */
+		z-index: 1;
+		/* Sit on top */
+		left: 0;
+		top: 0;
+		width: 100%;
+		/* Full width */
+		height: 100vh;
+		/* Full height */
+		overflow: auto;
+		/* Enable scroll if needed */
+		background-color: rgb(0, 0, 0);
+		/* Fallback color */
+		background-color: rgba(0, 0, 0, 0.4);
+		/* Black w/ opacity */
+	}
+
+	/* Modal Content/Box */
+	.modal-content {
+		padding: 16px;
+		background-color: #fff;
+		margin: 1% auto;
+		height: 100vh;
+	}
+
+	#form-modal {
+		display: flex;
+		flex-direction: column;
+		align-items: top;
+		overflow: hidden;
+		overflow-y: hidden;
+		overflow-x: hidden;
+	}
+
+	/* The Close Button */
+	.close {
+		cursor: pointer;
+		border: none;
+		padding: 16px;
+		background-color: #F5F7FA;
+		color: #05060F;
+		font-size: 16px;
+		font-weight: 500;
+		text-align: center;
+	}
+
+	#contact-form {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	#phone {
+		border: none;
+		padding: 16px;
+		border-bottom: 1px solid #DEDEDE;
+		font-size: 16px;
+	}
+
+	#telegram {
+		border: none;
+		padding: 16px;
+		border-bottom: 1px solid #DEDEDE;
+		font-size: 16px;
+	}
+
+	#name {
+		border: none;
+		padding: 16px;
+		border-bottom: 1px solid #DEDEDE;
+		font-size: 16px;
+	}
+
+	#name:focus-visible {
+		border: none;
+		padding: 16px;
+		border-bottom: 1px solid #DEDEDE;
+	}
+
+	.btn-submit {
+		cursor: pointer;
+		border: none;
+		padding: 16px;
+		background-color: #ECFF3C;
+		color: #05060F;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	/*  */
 	h1 {
 		margin: 0px;
 		font-size: 26px;
