@@ -4,10 +4,11 @@
 var modal = document.getElementById("form-modal");
 
 // Get the buttons that open the modal
+var headerBtn = document.getElementById("header");
 var adultBtn = document.getElementById("adult");
 var childBtn = document.getElementById("child");
 var groupBtn = document.getElementById("group");
-var groupBtn = document.getElementById("header");
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -49,6 +50,11 @@ window.onclick = function (event) {
 		modal.style.display = "none";
 		setCookie("modalState", "closed", 365);
 	}
+}
+
+// When the user clicks the adult button, open the modal
+headerBtn.onclick = function () {
+	modal.style.display = "block";
 }
 
 // When the user clicks the adult button, open the modal
