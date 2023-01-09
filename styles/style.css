@@ -5,6 +5,10 @@ body {
 	color: #05060F;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -28,6 +32,10 @@ span {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 2560px) {
+	* {
+		box-sizing: border-box;
+	}
+
 	h1 {
 		font-size: 36px;
 		font-weight: 500;
@@ -345,38 +353,35 @@ span {
 
 	/* services */
 	.services {
-		display: flex;
+		position: relative;
 		overflow: hidden;
-		align-items: center;
 		background-color: #ECFF3C;
-		gap: 12px;
-		padding: 10px 24px;
 	}
 
-	.services-crawl {
+	.services-wrapper {
 		display: flex;
+		width: 200%;
+		animation: run-ser 20s linear infinite;
 		align-items: center;
-		gap: 24px;
-		animation: run-animation 50s linear infinite;
 	}
 
-	.services-card span {
-		width: fit-content;
+	.services-card {
 		padding: 12px;
 		white-space: nowrap;
 		font-size: 16px;
 		font-weight: 700;
 	}
 
-	@keyframes run-animation {
-		from {
-			transform: translateX(0);
+	@keyframes run-ser {
+		0% {
+			transform: translateX(0%);
 		}
 
-		to {
-			transform: translateX(-100%);
+		100% {
+			transform: translateX(-50%);
 		}
 	}
+
 
 	/* services */
 
