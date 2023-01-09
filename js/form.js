@@ -5,6 +5,7 @@ var modal = document.getElementById("form-modal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("form-button");
+var btn = document.getElementById("form-button-adult");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
