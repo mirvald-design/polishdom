@@ -333,12 +333,10 @@ span {
 	.btn-contact {
 		background-color: #E5F33C;
 		transition: all 0.3s ease-out 0s;
-		border-radius: 24px;
 		text-align: center;
 		padding: 20px 24px;
-		color: #14151D;
+		color: #05060F;
 		font-weight: 500;
-		width: fit-content;
 	}
 
 
@@ -349,7 +347,7 @@ span {
 		transition: all 0.2s ease-out 0s;
 		transform: rotate(2.5deg);
 		font-weight: 500;
-		color: #fff;
+		color: #05060F;
 	}
 
 
@@ -458,10 +456,9 @@ span {
 	.tarif {
 		display: flex;
 		flex-direction: column;
-		background-color: #F9F9F9;
-		padding: 56px 64px 60px;
-		border-radius: 24px;
-		gap: 12px;
+		background-color: #F9F5FA;
+		padding: 64px;
+		gap: 16px;
 	}
 
 	.tutors {
@@ -475,22 +472,23 @@ span {
 
 	.tarif-block {
 		display: flex;
-		gap: 24px;
+		gap: 16px;
 	}
 
 	.tutor-block {
 		display: flex;
-		gap: 12px;
+		gap: 16px;
+		width: 100%;
 	}
 
 	.tarif-card {
 		display: flex;
 		flex-direction: column;
-		gap: 12px;
+		gap: 16px;
 		background-color: #fff;
 		border: 1px solid #14151D1A;
-		border-radius: 24px;
-		padding: 24px;
+		padding: 16px;
+		width: 33%;
 	}
 
 	.container-package {
@@ -507,32 +505,6 @@ span {
 		width: fit-content;
 	}
 
-	.adult {
-		background-image: url(/img/tarif/adult.jpg);
-		background-size: cover;
-		width: 280px;
-		height: 140px;
-		border-radius: 24px;
-	}
-
-
-
-	.child {
-		background-image: url(/img/tarif/child.jpg);
-		background-size: cover;
-		width: 280px;
-		height: 140px;
-		border-radius: 24px;
-	}
-
-	.group {
-		background-image: url(/img/tarif/group.jpg);
-		background-size: cover;
-		width: 280px;
-		height: 140px;
-		border-radius: 24px;
-	}
-
 
 	.tutor-card {
 		display: flex;
@@ -540,9 +512,7 @@ span {
 		gap: 12px;
 		background-color: #fff;
 		border: 1px solid #14151D1A;
-		border-radius: 24px;
 		padding: 24px;
-		width: 50%;
 		height: fit-content;
 	}
 
@@ -568,13 +538,6 @@ span {
 		border-radius: 24px;
 		width: 128px;
 		height: 128px;
-	}
-
-	.tarif-card h3 {
-		font-size: 16px;
-		line-height: 23px;
-		font-weight: 500;
-		margin: 0;
 	}
 
 	/* Reviews */
@@ -1145,14 +1108,6 @@ span {
 		gap: 16px;
 	}
 
-
-
-	.tarif-card h3 {
-		font-size: 16px;
-		line-height: 23px;
-		font-weight: 500;
-		margin: 0;
-	}
 
 	.tutors {
 		display: flex;
