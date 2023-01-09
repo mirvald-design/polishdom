@@ -321,6 +321,10 @@ button {
 		max-width: 525px;
 	}
 
+	.header-wrapper button {
+		width: fit-content;
+	}
+
 	.title {
 		font-size: 50px;
 		line-height: normal;
@@ -372,6 +376,9 @@ button {
 		padding: 16px 24px;
 	}
 
+	#submit {
+		width: 100%;
+	}
 
 
 	.btn-tarif {
@@ -380,8 +387,8 @@ button {
 		color: #05060F;
 		font-size: 16px;
 		font-weight: 600;
-		width: fit-content;
 		border: none;
+		text-align: center;
 	}
 
 	.btn-tarif:hover {
@@ -390,6 +397,7 @@ button {
 		transform: rotate(2.5deg);
 		font-weight: 700;
 		border: none;
+		text-align: center;
 	}
 
 	.btn-test {
