@@ -167,18 +167,18 @@ span {
 
 	/* footer */
 	.footer {
+		padding: 24px;
+		justify-content: space-between;
+		border-top: 1px solid rgba(5, 6, 15, 0.10);
+	}
+
+	.footer-wrapper {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		gap: 80px;
-
-		padding: 24px 180px;
 		max-width: 1080px;
 		margin: 0 auto;
-	}
-
-	.footer-container {
-		border-top: 1px solid rgba(5, 6, 15, 0.10);
 	}
 
 	.footer-left-part {
@@ -635,8 +635,11 @@ span {
 		flex-direction: column;
 		gap: 16px;
 		background-color: #4153E2;
+		color: #fff;
 		align-items: center;
+		text-align: center;
 		padding: 64px;
+		background-image: url(/img/questions.svg);
 	}
 
 	/* Any more questions? */
@@ -1215,20 +1218,18 @@ span {
 	.faq {
 		display: flex;
 		flex-direction: column;
-		gap: 12px;
-		background-color: #F9F9F9;
-		padding: 24px 12px;
-		border-radius: 24px;
+		gap: 16px;
+		background-color: #F1F2FB;
+		padding: 16px
 	}
 
 	.question {
 		display: flex;
 		flex-direction: column;
-		gap: 12px;
+		gap: 16px;
 		background-color: #fff;
 		border: 1px solid #14151D1A;
-		border-radius: 24px;
-		padding: 24px 12px;
+		padding: 16px;
 		cursor: pointer;
 	}
 
@@ -1239,11 +1240,79 @@ span {
 	}
 
 	/* FAQ */
+
+	/* Any more questions? */
+	.Any-more-questions {
+		display: flex;
+		color: #fff;
+		flex-direction: column;
+		gap: 16px;
+		background-color: #4153E2;
+		align-items: center;
+		padding: 16px;
+		text-align: left;
+		background-image: url(/img/questions.svg);
+	}
+
+	/* Any more questions? */
+
+	/* footer */
 	.footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		border-top: 1px solid rgba(5, 6, 15, 0.10);
+	}
+
+	.footer-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 80px;
+		margin: 0 auto;
+		padding: 16px;
+		align-items: flex-start;
+	}
+
+	.footer-left-part {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		align-items: flex-start;
+	}
+
+	.footer-right-part {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.footer-up-part {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 24px;
+	}
+
+	.footer-botoom-part {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.footer-nav {
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
 	}
+
+	.footer-contact {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	/*footer */
 
 
 }
