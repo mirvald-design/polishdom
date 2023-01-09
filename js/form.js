@@ -100,6 +100,8 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
 	xhr.open("GET", "https://api.telegram.org/bot5888482946:AAH48A_SlXa1XvJlnOPkPcXdOFwCdjHzwF8/sendMessage?chat_id=-1001707722226&text=" + encodeURIComponent(name + ": " + phone + " (" + telegram + ")"));
 	xhr.send();
 
+	alert("Ваши данные успешно отправлены!")
+
 	// Close the modal
 	modal.style.display = "none";
 });
