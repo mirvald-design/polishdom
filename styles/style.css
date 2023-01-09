@@ -336,12 +336,6 @@ button {
 		font-weight: 700;
 	}
 
-	.subtitle {
-		font-size: 20px;
-		line-height: normal;
-		font-weight: 400;
-	}
-
 	.btn-container {
 		display: flex;
 		gap: 12px;
@@ -387,26 +381,15 @@ button {
 		padding: 16px 24px;
 	}
 
-	#form-button {
-		transition: all 0.2s ease-out 0s;
+
+
+	.btn-tarif {
 		background-color: #E5F33C;
-		transition: all 0.3s ease-out 0s;
-		text-align: center;
-		padding: 20px 24px;
+		padding: 24px 20px;
 		color: #05060F;
-		font-weight: 500;
-	}
-
-
-
-	#form-button:hover {
-		cursor: pointer;
-		background-color: #E5F33C;
-		box-shadow: none;
-		transition: all 0.2s ease-out 0s;
-		transform: rotate(2.5deg);
-		font-weight: 500;
-		color: #05060F;
+		font-size: 16px;
+		font-weight: 600;
+		width: fit-content;
 	}
 
 	.btn-tarif:hover {
@@ -1051,11 +1034,6 @@ button {
 		font-size: 30px;
 		line-height: normal;
 		font-weight: 700;
-	}
-
-	.subtitle {
-		font-size: 16px;
-		line-height: normal;
 	}
 
 

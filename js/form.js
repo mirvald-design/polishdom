@@ -3,15 +3,14 @@
 // Get the modal
 var modal = document.getElementById("form-modal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("form-button");
-var btn = document.getElementById("form-button-adult");
+// Get the buttons that open the modal
+var adultBtn = document.getElementById("adult");
+var childBtn = document.getElementById("child");
+var groupBtn = document.getElementById("group");
+var groupBtn = document.getElementById("header");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-// Get the modal
-var modal = document.getElementById("form-modal");
 
 function setCookie(cname, cvalue, exdays) {
 	var d = new Date();
@@ -36,9 +35,6 @@ function getCookie(cname) {
 	return "";
 }
 
-// Get the modal
-var modal = document.getElementById("form-modal");
-
 // When the page loads, check the state of the modal in the cookie
 if (getCookie("modalState") === "open") {
 	modal.style.display
@@ -55,14 +51,18 @@ window.onclick = function (event) {
 	}
 }
 
-// When the user opens the modal, set the state in the cookie to "open"
-function openModal() {
+// When the user clicks the adult button, open the modal
+adultBtn.onclick = function () {
 	modal.style.display = "block";
-	setCookie("modalState", "open", 365);
 }
 
-// When the user clicks the button, open the modal
-btn.onclick = function () {
+// When the user clicks the child button, open the modal
+childBtn.onclick = function () {
+	modal.style.display = "block";
+}
+
+// When the user clicks the group button, open the modal
+groupBtn.onclick = function () {
 	modal.style.display = "block";
 }
 
@@ -72,8 +72,14 @@ span.onclick = function () {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window
+window.onclick = function (event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
+
 // When the user submits the form, send the data to Telegram
+
 document.getElementById("contact-form").addEventListener("submit", function (e) {
 	e.preventDefault(); // Prevent the form from refreshing the page
 
