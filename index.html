@@ -110,9 +110,9 @@
 					Индивидуальные и групповые онлайн занятия, для взрослых и детей
 					с тщательно выбранным преподавателем
 				</h2>
-				<button id="header" class="btn-tarif">Попробовать бесплатно 🔥</button>
+				<button id="header" class="btn-tarif open-modal" onclick="openModal()">Попробовать бесплатно 🔥</button>
 			</div>
-			<img style='max-width: 379px;' src="/img/hed.png" loading="lazy" sizes="(max-width: 1024px) 100vw, 1080px"
+			<img style='max-width: 379px;' src=" /img/hed.png" loading="lazy" sizes="(max-width: 1024px) 100vw, 1080px"
 				srcset="/img/hed@2x.png 500w, img/hed@2x.png 1020w" alt="">
 		</div>
 		<!-- Header -->
@@ -120,27 +120,34 @@
 
 		<!-- HTML for the form modal -->
 		<div id="form-modal" class="modal">
-
 			<div class="modal-content">
-
 				<form id="contact-form">
 					<h1 style='text-align: center;'>Запись на пробный урок</h1>
-					<h3 style='text-align: center;'>Чтобы записаться на пробный урок,
-						оставьте свои данные и мы свяжемся Вами в ближайшее время!</h3>
-					<input type="text" id="name" name="name" placeholder="Ваше имя"><br>
-					<input type="text" id="phone" name="phone" placeholder="Ваш номер"><br>
-					<input type="text" id="telegram" name="telegram" placeholder="Ваш email"><br><br>
+					<h3 style='text-align: center;'>Чтобы записаться на пробный урок, оставьте свои данные и мы свяжемся Вами в
+						ближайшее время!</h3>
 
-					<div style='display:flex; flex-direction: column; gap: 16px;'>
-						<span class='btn-tarif' type="submit" value="Записаться">Записаться</span>
-						<span class='close' type="submit" value="Закрыть">Закрыть</span>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" placeholder="Ваше имя" required>
+
+					<label for="number">Phone Number:</label>
+					<input type="tel" id="number" name="number" placeholder="Ваш номер" required>
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="Ваш email" required>
+
+					<div style="display: flex; justify-content: space-between; margin-top: 10px">
+						<input class='btn-tarif' type="submit" value="Записаться">
+						<input class='close' type="button" value="Закрыть" onclick="closeModal()">
 					</div>
-					<h4 style='text-align: center;'>Я согласен(а) с Договором публичной оферты</h4>
-				</form>
 
+					<div style="text-align: center; margin-top: 10px;">
+						<input type="checkbox" id="offer_agreement" required>
+						<label for="offer_agreement">Я согласен(а) с Договором публичной оферты</label>
+					</div>
+
+				</form>
 			</div>
 		</div>
-
 
 
 		<!-- Для кого подойдет -->
@@ -282,7 +289,7 @@
 					<p> <img src='/img/star.svg'> Упражнения по чтению и письму</p>
 					<p> <img src='/img/star.svg'> Обратная связь преподавателя 24/7</p>
 					<div style='text-align: center;' class='price'>от 15$/урок</div>
-					<button id="adult" class="btn-tarif">Попробовать бесплатно 🔥</button>
+					<button id="adult" class="btn-tarif open-modal">Попробовать бесплатно 🔥</button>
 				</div>
 
 				<div class='tarif-card'>
@@ -298,7 +305,7 @@
 					<p> <img src='/img/star.svg'> Упражнения по чтению и письму</p>
 					<p> <img src='/img/star.svg'> Обратная связь преподавателя 24/7</p>
 					<div style='text-align: center;' class='price'>от 14$/урок</div>
-					<button id="child" class="btn-tarif">Попробовать бесплатно 🔥</button>
+					<button id="child" class="btn-tarif open-modal">Попробовать бесплатно 🔥</button>
 				</div>
 
 				<div class='tarif-card'>
@@ -315,7 +322,7 @@
 					<p> <img src='/img/star.svg'> Обратная связь преподавателя 24/7</p>
 					<p> <img src='/img/star.svg'> Доступ к разговорному клубу</p>
 					<div style='text-align: center;' class='price'>от 11$ /урок</div>
-					<button id="group" class="btn-tarif">Попробовать бесплатно 🔥</button>
+					<button id="group" class="btn-tarif open-modal">Попробовать бесплатно 🔥</button>
 				</div>
 			</div>
 		</div>
