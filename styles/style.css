@@ -37,9 +37,11 @@ button {
 
 @media screen and (min-width: 1024px) and (max-width: 2560px) {
 
-
 	.modal {
 		display: none;
+	}
+
+	.modal:active {
 		position: fixed;
 		top: 0;
 		right: 0;
@@ -819,23 +821,15 @@ button {
 	/* CSS for the form modal */
 	.modal {
 		display: none;
-		/* Hidden by default */
 		position: fixed;
-		/* Stay in place */
 		z-index: 1;
-		/* Sit on top */
 		left: 0;
 		top: 0;
 		width: 100%;
-		/* Full width */
 		height: 100vh;
-		/* Full height */
 		overflow: auto;
-		/* Enable scroll if needed */
 		background-color: rgb(0, 0, 0);
-		/* Fallback color */
 		background-color: rgba(0, 0, 0, 0.4);
-		/* Black w/ opacity */
 	}
 
 	/* Modal Content/Box */
@@ -844,15 +838,6 @@ button {
 		background-color: #fff;
 		margin: 0% auto;
 		height: 100vh;
-	}
-
-	#form-modal {
-		display: flex;
-		flex-direction: column;
-		align-items: top;
-		overflow: hidden;
-		overflow-y: hidden;
-		overflow-x: hidden;
 	}
 
 	/* The Close Button */
