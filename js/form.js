@@ -1,6 +1,5 @@
 // Get the form element
 const form = document.getElementById("contact-form");
-const forf = document.getElementById("header");
 
 function openModal() {
     document.getElementById("form-modal").style.display = "block";
