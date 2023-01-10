@@ -106,6 +106,20 @@ button {
 		font-size: 16px;
 	}
 
+	#number {
+		border: none;
+		padding: 16px;
+		border-bottom: 1px solid #DEDEDE;
+		font-size: 16px;
+	}
+
+	#email {
+		border: none;
+		padding: 16px;
+		border-bottom: 1px solid #DEDEDE;
+		font-size: 16px;
+	}
+
 	#name:focus-visible {
 		border: none;
 		padding: 16px;
