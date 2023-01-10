@@ -74,8 +74,9 @@ button {
 		background-color: #F5F7FA;
 		color: #05060F;
 		font-size: 16px;
-		font-weight: 500;
+		font-weight: 600;
 		text-align: center;
+		padding: 24px 20px;
 	}
 
 	#contact-form {
@@ -837,6 +838,8 @@ button {
 		height: 100vh;
 	}
 
+
+
 	/* The Close Button */
 	.close {
 		cursor: pointer;
@@ -845,7 +848,7 @@ button {
 		background-color: #F5F7FA;
 		color: #05060F;
 		font-size: 16px;
-		font-weight: 500;
+		font-weight: 600;
 		text-align: center;
 	}
 

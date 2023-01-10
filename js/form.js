@@ -28,12 +28,12 @@ form.addEventListener("submit", function (event) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            alert("Successfully sent message");
+            alert("Успешно отправлено сообщение");
             // Reset the form
             form.reset();
         })
         .catch(error => {
-            alert("Error sending message");
+            alert("Ошибка отправки сообщения");
             console.error(error);
         });
 });
