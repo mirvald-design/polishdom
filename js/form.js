@@ -19,7 +19,7 @@ form.addEventListener("submit", function (event) {
     const number = document.getElementById("number").value;
     const email = document.getElementById("email").value;
 
-    let message = `name: ${name},number: ${number}\telegram: ${email}`;
+    let message = `Имя: ${name}, Номер: ${number}, Email: ${email}`;
     //for sending message to telegram you will need bot apiKey and chatid .
     const botToken = '5888482946:AAH48A_SlXa1XvJlnOPkPcXdOFwCdjHzwF8';
     const chatId = '-1001707722226';
