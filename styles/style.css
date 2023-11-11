@@ -1,8 +1,11 @@
 body {
+	display: flex;
+	flex-direction: column;
 	margin: 0;
 	background-color: #fff;
 	font-family: 'Jost', sans-serif;
 	color: #05060F;
+	gap: 12px;
 }
 
 * {
@@ -18,7 +21,7 @@ p {
 	margin: 0;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 24px;
 }
 
 a {
@@ -134,30 +137,30 @@ button {
 	}
 
 	h1 {
-		font-size: 36px;
+		font-size: 40px;
 		font-weight: 500;
-		line-height: normal;
+		line-height: 56px;
 		margin: 0;
 	}
 
 	h2 {
-		font-size: 18px;
+		font-size: 20px;
 		font-weight: 500;
-		line-height: normal;
+		line-height: 32px;
 		margin: 0;
 	}
 
 	h3 {
 		font-size: 16px;
 		font-weight: 400;
-		line-height: normal;
+		line-height: 24px;
 		margin: 0;
 	}
 
 	h4 {
 		font-size: 14px;
 		font-weight: 400;
-		line-height: normal;
+		line-height: 24px;
 		margin: 0;
 	}
 
@@ -260,6 +263,7 @@ button {
 	.btn-kons {
 		background-color: #F5F7FA;
 		padding: 12px 24px;
+		border-radius: 24px;
 		font-size: 14px;
 		line-height: 20px;
 		font-weight: 500;
@@ -324,8 +328,9 @@ button {
 		align-items: flex-end;
 		justify-content: space-between;
 		background-color: #F5F7FA;
-		background-image: url(/img/header.svg);
-		padding-right: 64px;
+		/* background-image: url(/img/header.svg); */
+		padding-right: 40px;
+		border-radius: 24px;
 	}
 
 	.header-wrapper {
@@ -399,11 +404,11 @@ button {
 
 	.btn-tarif {
 		background-color: #E5F33C;
-		padding: 24px 20px;
+		padding: 12px 24px;
 		color: #05060F;
 		font-size: 16px;
 		font-weight: 600;
-		border: none;
+		border-radius: 24px;
 		text-align: center;
 	}
 
@@ -438,10 +443,11 @@ button {
 	}
 
 	.btn-contact {
-		background-color: #E5F33C;
+		background-color: #fff;
 		transition: all 0.3s ease-out 0s;
 		text-align: center;
-		padding: 20px 24px;
+		padding: 12px 24px;
+		border-radius: 24px;
 		color: #05060F;
 		font-weight: 500;
 	}
@@ -449,12 +455,12 @@ button {
 
 	.btn-contact:hover {
 		cursor: pointer;
-		background-color: #E5F33C;
+		background-color: #F05726;
 		box-shadow: none;
 		transition: all 0.2s ease-out 0s;
 		transform: rotate(2.5deg);
 		font-weight: 500;
-		color: #05060F;
+		color: #fff;
 	}
 
 
@@ -462,20 +468,22 @@ button {
 	.services {
 		position: relative;
 		overflow: hidden;
-		background-color: #ECFF3C;
+		background-color: #FFEB3C;
+		border-radius: 24px;
+		padding: 12px 0px;
 	}
 
 	.services-wrapper {
 		display: flex;
-		width: 200%;
-		animation: run-ser 20s linear infinite;
+		gap: 12px;
+		animation: run-ser 15s linear infinite;
 		align-items: center;
 	}
 
 	.services-card {
-		padding: 12px;
 		white-space: nowrap;
-		font-size: 16px;
+		font-size: 14px;
+		line-height: 24px;
 		font-weight: 700;
 	}
 
@@ -495,9 +503,10 @@ button {
 	.Why-us-container {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: 12px;
 		background-color: #F1F2FB;
-		padding: 64px;
+		border-radius: 24px;
+		padding: 40px;
 		background-image: url(/img/Why\ us_.svg);
 	}
 
@@ -511,8 +520,9 @@ button {
 		flex-direction: column;
 		background-color: #fff;
 		padding: 16px 16px 16px;
-		gap: 16px;
+		gap: 12px;
 		border: 1px solid rgba(5, 6, 15, 0.1);
+		border-radius: 24px;
 	}
 
 	/* Why-us */
@@ -526,8 +536,9 @@ button {
 		display: flex;
 		background-color: #FBF6F1;
 		flex-wrap: wrap;
-		padding: 64px;
-		gap: 16px;
+		padding: 40px;
+		gap: 12px;
+		border-radius: 24px;
 		background-image: url(/img/How\ does\ the\ training\ go_.svg);
 	}
 
@@ -535,8 +546,9 @@ button {
 		display: flex;
 		background-color: #F1F9FB;
 		flex-wrap: wrap;
-		padding: 64px;
-		gap: 16px;
+		padding: 40px;
+		gap: 12px;
+		border-radius: 24px;
 	}
 
 	.kak-rabotajet-card {
@@ -544,9 +556,10 @@ button {
 		flex-direction: column;
 		background-color: #fff;
 		border: 1px solid rgba(16, 25, 40, 0.1);
-		padding: 16px;
+		padding: 20px;
 		gap: 12px;
 		width: 50%;
+		border-radius: 24px;
 	}
 
 	.price {
@@ -559,8 +572,9 @@ button {
 		display: flex;
 		flex-direction: column;
 		background-color: #F9F5FA;
-		padding: 64px;
-		gap: 16px;
+		padding: 40px;
+		border-radius: 24px;
+		gap: 12px;
 		background-image: url(/img/tarif.svg);
 	}
 
@@ -568,9 +582,10 @@ button {
 		display: flex;
 		flex-direction: column;
 		background-color: #F5F7FA;
-		padding: 64px;
-		gap: 16px;
-		background-image: url(/img/tutor.svg);
+		padding: 40px;
+		border-radius: 24px;
+		gap: 12px;
+		/* background-image: url(/img/tutor.svg); */
 	}
 
 	.tarif-block {
@@ -580,18 +595,19 @@ button {
 
 	.tutor-block {
 		display: flex;
-		gap: 16px;
+		gap: 12px;
 		width: 100%;
 	}
 
 	.tarif-card {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: 12px;
 		background-color: #fff;
 		border: 1px solid #14151D1A;
-		padding: 16px;
-		width: 33%;
+		padding: 20px;
+		width: 50%;
+		border-radius: 24px;
 	}
 
 	.container-package {
@@ -615,7 +631,8 @@ button {
 		gap: 12px;
 		background-color: #fff;
 		border: 1px solid #14151D1A;
-		padding: 24px;
+		padding: 20px;
+		border-radius: 24px;
 		height: fit-content;
 	}
 
@@ -654,26 +671,27 @@ button {
 		display: flex;
 		flex-direction: column;
 		background-color: #F7FBF1;
-		padding: 64px;
-		gap: 16px;
+		padding: 40px;
+		border-radius: 24px;
+		gap: 12px;
 	}
 
 	.reviews-block {
 		display: flex;
-		gap: 16px;
+		gap: 12px;
 	}
 
 	.reviews-block-right {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: 12px;
 		width: 50%;
 	}
 
 	.reviews-block-left {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: 12px;
 		width: 50%;
 	}
 
@@ -681,9 +699,10 @@ button {
 	.reviews-card {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: 12px;
 		background-color: #fff;
-		padding: 16px;
+		padding: 20px;
+		border-radius: 24px;
 		text-align: left;
 		border: 1px solid #14151D1A;
 	}
@@ -708,17 +727,19 @@ button {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 16px;
+		gap: 12px;
 		background-color: #F1F2FB;
-		padding: 64px;
+		padding: 40px;
+		border-radius: 24px;
 	}
 
 	.question {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: 12px;
 		background-color: #fff;
-		padding: 16px;
+		padding: 20px;
+		border-radius: 24px;
 		cursor: pointer;
 		width: 756px;
 		border: 1px solid rgba(5, 6, 15, 0.1)
@@ -736,13 +757,14 @@ button {
 	.Any-more-questions {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: 12px;
 		background-color: #4153E2;
 		color: #fff;
 		align-items: center;
 		text-align: center;
-		padding: 64px;
-		background-image: url(/img/questions.svg);
+		padding: 40px;
+		border-radius: 24px;
+		/* background-image: url(/img/questions.svg); */
 	}
 
 	/* Any more questions? */
@@ -931,7 +953,9 @@ button {
 	.main {
 		display: flex;
 		flex-direction: column;
-		gap: 32px;
+		gap: 24px;
+		margin-left: 16px;
+		margin-right: 16px;
 	}
 
 	/* Mobile menu */
@@ -957,6 +981,7 @@ button {
 	.burger-icon {
 		background: rgba(5, 6, 15, 0.04);
 		padding: 10px;
+		border-radius: 24px;
 	}
 
 	.menu-items {
@@ -1021,8 +1046,9 @@ button {
 		flex-direction: column;
 		justify-content: space-between;
 		background-color: #F5F7FA;
-		padding: 16px;
-		background-image: url(/img/header.svg);
+		padding: 20px;
+		border-radius: 24px;
+		/* background-image: url(/img/header.svg); */
 		background-repeat: no-repeat;
 		background-position: center;
 		gap: 32px;
@@ -1062,9 +1088,10 @@ button {
 	}
 
 	.btn-contact {
-		background-color: #E5F33C;
+		background-color: #fff;
 		text-align: center;
-		padding: 20px 24px;
+		padding: 12px 24px;
+		border-radius: 24px;
 		color: #05060F;
 		font-weight: 500;
 	}
@@ -1124,10 +1151,11 @@ button {
 
 	.btn-tarif {
 		text-align: center;
-		background-color: #ECFF3C;
-		padding: 20px 24px;
-		color: #05060F;
-		font-size: 16px;
+		background-color: #F05726;
+		padding: 12px 24px;
+		border-radius: 24px;
+		color: #fff;
+		font-size: 14px;
 		line-height: normal;
 		font-weight: 600;
 		border: none;
@@ -1137,7 +1165,7 @@ button {
 	.services {
 		position: relative;
 		overflow: hidden;
-		background-color: #ECFF3C;
+		background-color: #FFEB3C;
 	}
 
 	.services-wrapper {
@@ -1433,12 +1461,13 @@ button {
 		display: flex;
 		color: #fff;
 		flex-direction: column;
-		gap: 16px;
+		gap: 12px;
+		border-radius: 24px;
 		background-color: #4153E2;
 		align-items: center;
 		padding: 16px;
 		text-align: center;
-		background-image: url(/img/questions.svg);
+		/* background-image: url(/img/questions.svg); */
 	}
 
 	/* Any more questions? */
